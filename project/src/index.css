@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    cursor: default;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(230, 57, 70, 0.3) transparent;
+  }
+
+  a, button {
+    cursor: pointer;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background-dark text-white font-sans antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(230, 57, 70, 0.3);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(230, 57, 70, 0.5);
+  }
+
+  ::selection {
+    @apply bg-accent-primary/30 text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent-primary text-white px-6 py-3 rounded font-medium text-sm tracking-wide transition-all duration-200 hover:bg-accent-hover hover:scale-[1.02] inline-flex items-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-white/30 text-white px-6 py-3 rounded font-medium text-sm tracking-wide transition-all duration-200 hover:bg-white/5 hover:border-white/50;
+  }
+
+  .card {
+    @apply bg-background-secondary border border-border rounded-lg p-6 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:border-accent-primary/50 hover:shadow-[0_0_20px_rgba(230,57,70,0.1)];
+  }
+
+  .badge {
+    @apply bg-accent-primary/10 text-accent-primary border border-accent-primary/20 px-4 py-1.5 rounded-full text-xs font-medium tracking-wide uppercase;
+  }
+
+  .input-field {
+    @apply w-full bg-background-secondary border border-border rounded px-4 py-3 text-white text-sm transition-all focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary/20 placeholder:text-text-secondary;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-semibold text-white tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-text-secondary text-lg max-w-2xl;
+  }
+
+  .nav-link {
+    @apply text-text-secondary text-sm font-medium transition-colors hover:text-white relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-px bg-accent-primary transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-white to-text-secondary bg-clip-text text-transparent;
+  }
+}
