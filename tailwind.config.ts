@@ -10,18 +10,20 @@ const config: Config = {
     extend: {
       colors: {
         dark: {
-          DEFAULT: '#0D1117',
-          card: '#161B22',
-          hover: '#21262D',
+          DEFAULT: '#0A0A0A',
+          card: '#1A1A1A',
+          border: '#2A2A2A',
+          hover: '#1A1A1A',
         },
         accent: {
           DEFAULT: '#DC2626',
+          hover: '#B91C1C',
+          light: '#FCA5A5',
           dark: '#B91C1C',
-          light: '#EF4444',
           muted: '#7F1D1D',
         },
-        muted: '#8B949E',
-        border: '#30363D',
+        muted: '#9CA3AF',
+        border: '#2A2A2A',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],

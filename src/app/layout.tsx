@@ -104,6 +104,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
+        <meta name="google-site-verification" content="REPLACE_WITH_GSC_CODE" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -117,7 +118,7 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className="bg-dark text-white antialiased">
+      <body className="bg-[#0A0A0A] text-white antialiased">
         {process.env.NEXT_PUBLIC_GTM_ID && (
           <noscript>
             <iframe
