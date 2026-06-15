@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: "DORA et Tests TLPT — Guide pour les Fintechs en 2025 | Atlas RedConsult",

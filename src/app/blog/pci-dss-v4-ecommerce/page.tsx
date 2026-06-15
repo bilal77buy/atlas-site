@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: "PCI-DSS v4.0 — Ce qui Change pour l'E-commerce | Atlas RedConsult",

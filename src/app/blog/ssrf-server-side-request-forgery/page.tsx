@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'SSRF — Server Side Request Forgery : Comprendre et Prévenir | Atlas RedConsult',

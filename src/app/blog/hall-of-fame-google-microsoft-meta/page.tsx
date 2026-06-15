@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: "Hall of Fame Google, Microsoft, Meta — Notre Parcours Bug Bounty | Atlas RedConsult",
