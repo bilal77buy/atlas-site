@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% block title %}Importer — Atlas Cyber{% endblock %}
+{% block content %}
+<h1 class="text-2xl font-bold text-gray-800 mb-6">Importer des leads</h1>
+
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+
+  <!-- CSV upload -->
+  <div class="bg-white rounded-lg shadow p-6" x-data="{result: null, loading: false}">
+    <h2 class="font-semibold text-gray-700 mb-1">Importer un CSV</h2>
+    <p class="text-xs text-gray-400 mb-4">Colonnes acceptees: name, company, title, country, city, website, email, phone, employees, notes</p>
+
+    <form
+      @submit.prevent="
+        loading = true; result = null;
+        const fd = new FormData($el);
+        fetch('/api/discovery/import-csv', {method: 'POST', body: fd})
+          .then(r => r.json()).then(d => { result = d; loading = false; })
+          .catch(() => { result = {error: 'Erreur reseau'}; loading = false; })
+      ">
+      <input type="file" name="file" accept=".csv" required class="block w-full text-sm text-gray-600 mb-3" />
+      <button type="submit" :disabled="loading" class="w-full bg-blue-600 text-white text-sm py-2 rounded hover:bg-blue-700 disabled:opacity-50">
+        <span x-show="!loading">Importer</span>
+        <span x-show="loading" x-cloak>Traitement...</span>
+      </button>
+    </form>
+
+    <div x-show="result" x-cloak class="mt-3 text-xs">
+      <template x-if="result && !result.error">
+        <div class="text-green-700">
+          <p><strong x-text="result.new_leads"></strong> nouveaux leads importes.</p>
+          <p><span x-text="result.duplicates_skipped"></span> doublons ignores.</p>
+        </div>
+      </template>
+      <template x-if="result && result.error">
+        <p class="text-red-600" x-text="result.error"></p>
+      </template>
+    </div>
+  </div>
+
+  <!-- Web search -->
+  <div class="bg-white rounded-lg shadow p-6" x-data="{query: '', result: null, loading: false}">
+    <h2 class="font-semibold text-gray-700 mb-1">Recherche web publique</h2>
+    <p class="text-xs text-gray-400 mb-4">DuckDuckGo uniquement. Aucun login, aucun scraping prive.</p>
+
+    <div class="mb-3">
+      <label class="text-xs text-gray-500 block mb-1">Requete (optionnel)</label>
+      <input type="text" x-model="query" placeholder="vCISO freelance France..." class="w-full border border-gray-300 rounded px-3 py-1.5 text-sm" />
+    </div>
+
+    <button
+      @click="loading=true; result=null;
+        fetch('/api/discovery/search', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({query: query || null, max_results: 20})})
+          .then(r=>r.json()).then(d=>{result=d; loading=false;}).catch(()=>{result={error:'Erreur'}; loading=false;})"
+      :disabled="loading"
+      class="w-full bg-purple-600 text-white text-sm py-2 rounded hover:bg-purple-700 disabled:opacity-50">
+      <span x-show="!loading">Lancer la recherche</span>
+      <span x-show="loading" x-cloak>Recherche en cours...</span>
+    </button>
+
+    <div x-show="result" x-cloak class="mt-3 text-xs">
+      <template x-if="result && !result.error">
+        <div class="text-green-700">
+          <p><strong x-text="result.new_leads"></strong> leads decouverts et sauvegardes.</p>
+          <p><span x-text="result.duplicates_skipped"></span> doublons ignores.</p>
+        </div>
+      </template>
+      <template x-if="result && result.error">
+        <p class="text-red-600" x-text="result.error"></p>
+      </template>
+    </div>
+  </div>
+
+  <!-- URL fetch -->
+  <div class="bg-white rounded-lg shadow p-6" x-data="{url: '', result: null, loading: false}">
+    <h2 class="font-semibold text-gray-700 mb-1">Extraire depuis une URL</h2>
+    <p class="text-xs text-gray-400 mb-4">Pages publiques uniquement. Pas d'authentification, pas de contournement.</p>
+
+    <div class="mb-3">
+      <label class="text-xs text-gray-500 block mb-1">URL publique</label>
+      <input type="url" x-model="url" placeholder="https://exemple.fr/contact" class="w-full border border-gray-300 rounded px-3 py-1.5 text-sm" />
+    </div>
+
+    <button
+      @click="if(!url){return;} loading=true; result=null;
+        fetch('/api/discovery/fetch-url', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({url})})
+          .then(r=>r.json()).then(d=>{result=d; loading=false;}).catch(()=>{result={error:'Erreur'}; loading=false;})"
+      :disabled="loading || !url"
+      class="w-full bg-teal-600 text-white text-sm py-2 rounded hover:bg-teal-700 disabled:opacity-50">
+      <span x-show="!loading">Extraire</span>
+      <span x-show="loading" x-cloak>Extraction...</span>
+    </button>
+
+    <div x-show="result" x-cloak class="mt-3 text-xs">
+      <template x-if="result && !result.error">
+        <div class="text-green-700">
+          <p><strong x-text="result.new_leads"></strong> leads extraits.</p>
+        </div>
+      </template>
+      <template x-if="result && result.error">
+        <p class="text-red-600" x-text="result.error"></p>
+      </template>
+    </div>
+  </div>
+
+</div>
+
+<div class="mt-8 bg-gray-50 border border-gray-200 rounded p-4 text-xs text-gray-600">
+  <strong>Sources autorisees:</strong> DuckDuckGo (recherche publique), pages web publiques, CSV fournis par l'utilisateur.
+  Scraping LinkedIn ou toute tentative de contournement des systemes anti-bot est <strong>interdite</strong>.
+</div>
+{% endblock %}

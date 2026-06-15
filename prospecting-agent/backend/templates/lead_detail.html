@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block title %}{{ lead.full_name or 'Lead' }} — Atlas Cyber{% endblock %}
+{% block content %}
+<div class="mb-4">
+  <a href="/leads" class="text-sm text-blue-600 hover:underline">&larr; Retour aux leads</a>
+</div>
+
+<div class="grid grid-cols-3 gap-6">
+  <!-- Left: profile -->
+  <div class="col-span-2 space-y-4">
+    <div class="bg-white rounded-lg shadow p-6">
+      <h1 class="text-xl font-bold text-gray-800">{{ lead.full_name or 'Inconnu' }}</h1>
+      <p class="text-gray-500">{{ lead.job_title or '' }}{% if lead.company_name %} &mdash; {{ lead.company_name }}{% endif %}</p>
+      <p class="text-sm text-gray-400 mt-1">{{ lead.city or '' }}{% if lead.country %}, {{ lead.country }}{% endif %}</p>
+
+      <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+        {% if lead.public_email %}
+        <div><span class="text-gray-400">Email:</span> <span class="text-gray-700">{{ lead.public_email }}</span></div>
+        {% endif %}
+        {% if lead.phone %}
+        <div><span class="text-gray-400">Tel:</span> <span class="text-gray-700">{{ lead.phone }}</span></div>
+        {% endif %}
+        {% if lead.website %}
+        <div><span class="text-gray-400">Site:</span> <a href="{{ lead.website }}" target="_blank" class="text-blue-600 hover:underline">{{ lead.website }}</a></div>
+        {% endif %}
+        {% if lead.linkedin_url %}
+        <div><span class="text-gray-400">LinkedIn:</span> <a href="{{ lead.linkedin_url }}" target="_blank" class="text-blue-600 hover:underline">Profil</a></div>
+        {% endif %}
+        {% if lead.employee_size_estimate %}
+        <div><span class="text-gray-400">Effectif:</span> <span class="text-gray-700">~{{ lead.employee_size_estimate }}</span></div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if lead.search_snippet %}
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="font-semibold text-gray-700 mb-2">Extrait</h2>
+      <p class="text-sm text-gray-600">{{ lead.search_snippet }}</p>
+    </div>
+    {% endif %}
+
+    {% if lead.enrichment %}
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="font-semibold text-gray-700 mb-3">Enrichissement LLM</h2>
+      <p class="text-sm text-gray-600 mb-3">{{ lead.enrichment.summary }}</p>
+      {% if lead.enrichment.recommended_angle %}
+      <p class="text-xs text-indigo-700 bg-indigo-50 rounded p-2">
+        <strong>Angle suggere:</strong> {{ lead.enrichment.recommended_angle }}
+      </p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Drafts -->
+    {% if lead.drafts %}
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="font-semibold text-gray-700 mb-3">Drafts de prospection</h2>
+      <div class="bg-amber-50 border border-amber-200 rounded p-3 mb-4 text-xs text-amber-700">
+        Ces drafts sont a copier-coller manuellement. Aucun envoi automatique.
+      </div>
+      {% for draft in lead.drafts %}
+      <div class="border border-gray-200 rounded p-4 mb-3">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-medium text-gray-500">{{ draft.channel | upper }} / {{ draft.language | upper }}</span>
+          {% if draft.human_reviewed %}
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">Approuve</span>
+          {% else %}
+          <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">En attente</span>
+          {% endif %}
+        </div>
+        {% if draft.subject %}
+        <p class="text-xs text-gray-500 mb-2"><strong>Sujet:</strong> {{ draft.subject }}</p>
+        {% endif %}
+        <pre class="text-sm text-gray-700 whitespace-pre-wrap font-sans">{{ draft.body }}</pre>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Right: score card + actions -->
+  <div class="space-y-4">
+    {% if lead.score %}
+    <div class="bg-white rounded-lg shadow p-5">
+      <h2 class="font-semibold text-gray-700 mb-3">Score</h2>
+      {% set s = lead.score.total_score %}
+      <div class="text-4xl font-bold mb-2
+        {% if s >= 70 %}text-green-600
+        {% elif s >= 50 %}text-yellow-500
+        {% else %}text-red-500{% endif %}">{{ s }}<span class="text-base text-gray-400">/100</span></div>
+
+      {% if lead.score.disqualified %}
+      <div class="text-xs text-red-600 bg-red-50 rounded p-2 mb-3">
+        Disqualifie: {{ lead.score.disqualification_reason }}
+      </div>
+      {% endif %}
+
+      <div class="space-y-1 text-xs text-gray-600">
+        <div class="flex justify-between"><span>Statut independant</span><span class="font-medium">{{ lead.score.independent_status_score }}/20</span></div>
+        <div class="flex justify-between"><span>Taille entreprise</span><span class="font-medium">{{ lead.score.company_size_score }}/15</span></div>
+        <div class="flex justify-between"><span>Region</span><span class="font-medium">{{ lead.score.region_match_score }}/10</span></div>
+        <div class="flex justify-between"><span>Budget fit</span><span class="font-medium">{{ lead.score.budget_fit_score }}/15</span></div>
+        <div class="flex justify-between"><span>Besoin cyber</span><span class="font-medium">{{ lead.score.cyber_need_score }}/15</span></div>
+        <div class="flex justify-between"><span>Complementarite</span><span class="font-medium">{{ lead.score.service_complementarity_score }}/10</span></div>
+        <div class="flex justify-between"><span>Contactabilite</span><span class="font-medium">{{ lead.score.contactability_score }}/10</span></div>
+        <div class="flex justify-between"><span>Langue</span><span class="font-medium">{{ lead.score.language_fit_score }}/5</span></div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Actions -->
+    <div class="bg-white rounded-lg shadow p-5 space-y-2" x-data="{loading: false}">
+      <h2 class="font-semibold text-gray-700 mb-3">Actions</h2>
+
+      <button
+        @click="loading=true; fetch('/api/enrichment/{{ lead.id }}', {method:'POST'}).then(()=>location.reload())"
+        :disabled="loading"
+        class="w-full text-sm bg-indigo-600 text-white px-3 py-2 rounded hover:bg-indigo-700 disabled:opacity-50">
+        Enrichir (LLM)
+      </button>
+
+      <button
+        @click="loading=true; fetch('/api/messaging/{{ lead.id }}/generate', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({channel:'email', language:'fr'})}).then(()=>location.reload())"
+        :disabled="loading"
+        class="w-full text-sm bg-teal-600 text-white px-3 py-2 rounded hover:bg-teal-700 disabled:opacity-50">
+        Generer draft email (FR)
+      </button>
+
+      <button
+        @click="loading=true; fetch('/api/review/{{ lead.id }}', {method:'PATCH', headers:{'Content-Type':'application/json'}, body: JSON.stringify({status:'approved'})}).then(()=>location.reload())"
+        :disabled="loading"
+        class="w-full text-sm bg-green-600 text-white px-3 py-2 rounded hover:bg-green-700 disabled:opacity-50">
+        Approuver
+      </button>
+
+      <button
+        @click="loading=true; fetch('/api/review/{{ lead.id }}', {method:'PATCH', headers:{'Content-Type':'application/json'}, body: JSON.stringify({status:'rejected'})}).then(()=>location.reload())"
+        :disabled="loading"
+        class="w-full text-sm bg-red-100 text-red-700 px-3 py-2 rounded hover:bg-red-200 disabled:opacity-50">
+        Rejeter
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}

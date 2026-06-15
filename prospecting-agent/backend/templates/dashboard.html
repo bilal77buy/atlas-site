@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Atlas Cyber Prospecting{% endblock %}
+{% block content %}
+<h1 class="text-2xl font-bold text-gray-800 mb-6">Dashboard</h1>
+
+<div class="grid grid-cols-2 gap-4 sm:grid-cols-4 mb-8">
+  <div class="bg-white rounded-lg shadow p-5">
+    <p class="text-sm text-gray-500">Total leads</p>
+    <p class="text-3xl font-bold text-gray-800 mt-1">{{ stats.total_leads }}</p>
+  </div>
+  <div class="bg-white rounded-lg shadow p-5">
+    <p class="text-sm text-gray-500">High priority (≥70)</p>
+    <p class="text-3xl font-bold text-green-600 mt-1">{{ stats.high_priority }}</p>
+  </div>
+  <div class="bg-white rounded-lg shadow p-5">
+    <p class="text-sm text-gray-500">Pending review</p>
+    <p class="text-3xl font-bold text-yellow-500 mt-1">{{ stats.pending_review }}</p>
+  </div>
+  <div class="bg-white rounded-lg shadow p-5">
+    <p class="text-sm text-gray-500">Approved for outreach</p>
+    <p class="text-3xl font-bold text-blue-600 mt-1">{{ stats.approved_for_outreach }}</p>
+  </div>
+</div>
+
+<div class="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 text-sm text-amber-800">
+  <strong>Rappel conformite :</strong> Ce systeme ne peut pas envoyer de messages automatiquement.
+  Toute prise de contact doit etre effectuee manuellement apres validation humaine.
+</div>
+
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+  <a href="/leads" class="bg-white rounded-lg shadow p-5 hover:shadow-md transition">
+    <p class="font-semibold text-gray-700">Voir les leads</p>
+    <p class="text-sm text-gray-400 mt-1">Parcourir, filtrer, scorer</p>
+  </a>
+  <a href="/review" class="bg-white rounded-lg shadow p-5 hover:shadow-md transition">
+    <p class="font-semibold text-gray-700">Queue de revue</p>
+    <p class="text-sm text-gray-400 mt-1">Approuver ou rejeter les drafts</p>
+  </a>
+  <a href="/ingest" class="bg-white rounded-lg shadow p-5 hover:shadow-md transition">
+    <p class="font-semibold text-gray-700">Importer des leads</p>
+    <p class="text-sm text-gray-400 mt-1">CSV, URL, recherche web</p>
+  </a>
+</div>
+{% endblock %}
