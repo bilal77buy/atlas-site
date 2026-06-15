@@ -1,6 +1,7 @@
 
 
 const nextConfig = {
+  generateBuildId: async () => 'build-' + Date.now(),
   images: {
     formats: ['image/avif', 'image/webp'],
   },
