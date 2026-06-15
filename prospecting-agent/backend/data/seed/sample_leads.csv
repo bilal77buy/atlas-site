@@ -1,0 +1,11 @@
+name,company,title,country,city,website,email,phone,employees,notes
+Jean-Philippe Moreau,JPM Conseil Cyber,RSSI Externalise - Freelance,France,Paris,https://jpmconseil.fr,jp@jpmconseil.fr,+33612345678,1,Specialiste ISO 27001 et NIS2. Travaille avec des PME.
+Sophie Durand,SD Security Advisory,vCISO Independante,France,Lyon,https://sdsecurity.fr,sophie@sdsecurity.fr,,1,Ancienne RSSI grand groupe reconvertie en vCISO freelance.
+Marc Fontaine,Fontaine IT Conseil,DSI a temps partage,Suisse,Geneve,https://fontaineit.ch,marc@fontaineit.ch,+41791234567,2,DSI fractionnaire pour PME romandes. Expertise gouvernance.
+Ahmed Benali,AB Cyber Consulting,Consultant Cybersecurite Independant,Maroc,Casablanca,https://abcyber.ma,ahmed@abcyber.ma,,1,Consultant RGPD et audit securite. Clients FR et MA.
+Marie-Claire Lefebvre,MCL Security,CISO Freelance,Belgique,Bruxelles,https://mclsecurity.be,mc@mclsecurity.be,+32475123456,1,Specialiste conformite et sensibilisation. Marche belge et francais.
+Thomas Girard,TG Conseil,vRSSI - Mission independante,France,Bordeaux,,thomas.girard@tgconseil.fr,,2,Reconversion depuis ESN. Cible TPE et PME locales.
+Isabelle Renaud,IR Advisory,DSI fractionnaire,France,Toulouse,https://iradvisory.fr,,,3,Ancienne DSI groupe industriel. Accompagne transformations numeriques PME.
+Karim Mansouri,KM Securite,Consultant Cybersecurite,Maroc,Rabat,,,+212661234567,1,Expert pentest et audit. Recherche partenariats europeens.
+Laura Schmitt,LS Digital Security,vCISO et DPO,Suisse,Zurich,https://lsdigitalsec.ch,laura@lsdigitalsec.ch,,1,Double casquette vCISO et DPO. Marche suisse allemand et romand.
+Nicolas Perrot,NP Cyber,RSSI Externalise,France,Nantes,https://npcyber.fr,nicolas@npcyber.fr,+33698765432,2,Specialiste securite industrielle et OT. Secteur energie et manufacturing.

@@ -1,0 +1,7 @@
+# Public pages that may contain cybersecurity consultant profiles
+# These are example starting points for the URL fetcher
+# Add real public directories/pages you have permission to access
+
+https://www.crunchbase.com/search/people/field/people/facet_ids/cybersecurity
+https://www.malt.fr/expertise/cybersecurite
+https://www.freelance-info.fr/annuaires/profil/rssi
