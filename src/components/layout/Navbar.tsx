@@ -11,6 +11,7 @@ const navLinks = [
   { href: '/pentest-api', label: 'Pentest API' },
   { href: '/pentest-mobile-android', label: 'Pentest Mobile' },
   { href: '/red-team-cybersecurite', label: 'Red Team' },
+  { href: '/blog', label: 'Blog' },
   { href: '/a-propos', label: 'À Propos' },
 ]
 

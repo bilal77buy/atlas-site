@@ -112,7 +112,7 @@ export default function Footer() {
                 href="mailto:contact@atlasredconsult.fr"
                 className="text-[#9CA3AF] hover:text-white text-sm transition-colors"
               >
-                contact@atlasredconsult.fr
+                contact.atlascyber@gmail.com
               </a>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function Footer() {
 
         <div className="border-t border-[#2A2A2A] mt-10 pt-6">
           <p className="text-[#9CA3AF] text-xs text-center">
-            © 2024 Atlas RedConsult — Cabinet de Pentest Paris 75008 | 60 rue François 1er
+            © 2025 Atlas RedConsult — Cabinet de Pentest Paris 75008 | 60 rue François 1er
           </p>
         </div>
       </div>
