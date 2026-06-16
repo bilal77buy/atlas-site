@@ -97,17 +97,9 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Notre approche avec fond photo */}
-      <section
-        className="relative py-20 overflow-hidden"
-        style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-[#0A0A0A]/88" />
-        <div className="max-w-6xl mx-auto px-6 relative">
+      {/* Notre approche */}
+      <section className="py-20 bg-[#111111]">
+        <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
             Notre approche : offensif avant tout
           </h2>
