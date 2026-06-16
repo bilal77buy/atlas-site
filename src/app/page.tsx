@@ -13,7 +13,6 @@ import {
   ArrowRight,
   ChevronRight,
   Star,
-  Euro,
   AlertTriangle,
 } from 'lucide-react'
 
@@ -132,7 +131,7 @@ const faqItems = [
   {
     question: 'Combien coûte un pentest chez Atlas RedConsult ?',
     answer:
-      'Nos missions sont facturées à 160 €/heure ou 1 280 €/jour. Le panier moyen d\'une mission se situe entre 4 000 € et 20 000 € selon le périmètre, la durée et la complexité. Un pentest web ciblé démarre à partir de 3 200 € (2,5 jours). Une mission Red Team complète peut dépasser 15 000 €. Chaque devis est personnalisé et gratuit — répondez à notre formulaire pour recevoir une estimation sous 48h.',
+      'Contactez-nous pour un devis personnalisé gratuit sous 48h.',
   },
   {
     question: 'Quelle est la durée d\'une mission de test d\'intrusion ?',
@@ -313,7 +312,7 @@ export default function HomePage() {
               },
               {
                 title: 'Tarification transparente',
-                body: 'Pas de surprise en fin de mission. Notre grille tarifaire est claire : 160 €/heure ou 1 280 €/jour. Votre devis détaille le nombre de jours, les livrables et les conditions d\'intervention. Pas de coût caché, pas de surcoût non justifié.',
+                body: 'Pas de surprise en fin de mission. Votre devis détaille le nombre de jours, les livrables et les conditions d\'intervention. Pas de coût caché, pas de surcoût non justifié.',
               },
             ].map((item) => (
               <div
@@ -484,34 +483,10 @@ export default function HomePage() {
               Chez Atlas RedConsult, la transparence tarifaire est un engagement. Votre devis détaille précisément le nombre de jours, les livrables attendus et les conditions d&apos;intervention — sans surprise.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-[#1A1A1A] border border-white/5 rounded-xl p-8 text-center">
-              <Euro className="w-8 h-8 text-red-600 mx-auto mb-4" />
-              <div className="text-4xl font-bold text-white mb-2">160 €</div>
-              <div className="text-gray-400 text-sm mb-4">par heure</div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Tarif journalier moyen applicable pour toutes nos missions de pentest et d&apos;audit de sécurité.
-              </p>
-            </div>
-            <div className="bg-[#1A1A1A] border border-red-600/40 rounded-xl p-8 text-center relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-semibold text-red-600 bg-red-600/10 border border-red-600/30 rounded-full px-4 py-1">
-                Le plus choisi
-              </div>
-              <Euro className="w-8 h-8 text-red-600 mx-auto mb-4" />
-              <div className="text-4xl font-bold text-white mb-2">1 280 €</div>
-              <div className="text-gray-400 text-sm mb-4">par jour</div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Facturation à la journée pour les missions planifiées. Idéal pour les pentests web, API et infrastructure.
-              </p>
-            </div>
-            <div className="bg-[#1A1A1A] border border-white/5 rounded-xl p-8 text-center">
-              <Server className="w-8 h-8 text-red-600 mx-auto mb-4" />
-              <div className="text-4xl font-bold text-white mb-2">4k – 20k€</div>
-              <div className="text-gray-400 text-sm mb-4">panier moyen mission</div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                Budget indicatif selon la complexité. Un pentest web ciblé : à partir de 4 000 €. Une mission Red Team complète : jusqu&apos;à 20 000 €.
-              </p>
-            </div>
+          <div className="bg-[#1A1A1A] border border-white/5 rounded-xl p-8 text-center mb-12">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Chaque mission est unique. Contactez-nous pour recevoir un devis personnalisé gratuit sous 48h, adapté à votre périmètre et vos contraintes.
+            </p>
           </div>
           <div className="bg-[#1A1A1A] border border-white/5 rounded-xl p-8">
             <h3 className="text-white font-semibold text-xl mb-4">Ce qui est toujours inclus dans votre mission</h3>

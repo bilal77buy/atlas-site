@@ -44,8 +44,7 @@ const articles: Record<string, {
       <p>Accès complet : code source, documentation, architecture, credentials. <strong>Avantages :</strong> couverture maximale, identification de vulnérabilités logiques profondes. <strong>Inconvénients :</strong> moins réaliste, nécessite plus de temps d'analyse.</p>
       <h2>Quand choisir quoi ?</h2>
       <p>Black Box pour tester la défense périmétrique. Grey Box pour les tests récurrents et la conformité. White Box pour les audits de code source et les applications critiques.</p>
-      <h2>TJM Atlas RedConsult</h2>
-      <p>160€/h — 1 280€/jour. Devis sous 48h.</p>
+
     `,
   },
   'bola-bfla-securite-api': {

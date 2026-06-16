@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Shield, Eye, Lock, MapPin, ArrowRight, Trophy, Euro } from 'lucide-react'
+import { Shield, Eye, Lock, MapPin, ArrowRight, Trophy } from 'lucide-react'
 import Breadcrumb from '@/components/ui/Breadcrumb'
 
 export const dynamic = 'force-dynamic'
@@ -97,13 +97,15 @@ export default function AProposPage() {
       />
 
       {/* Hero */}
-      <section className="relative pt-28 pb-12 md:pt-36 md:pb-16 overflow-hidden bg-[#0A0A0A]">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent pointer-events-none" />
+      <section
+        className="relative pt-28 pb-12 md:pt-36 md:pb-16 overflow-hidden bg-[#0A0A0A]"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0 bg-[#0A0A0A]/80" />
         <div className="section-container relative">
           <Breadcrumb items={[{ label: 'À propos', href: '/a-propos' }]} />
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight mb-6">
-            Cabinet Atlas RedConsult —{' '}
-            <span className="text-red-600">Experts en Sécurité Offensive Paris</span>
+            Atlas RedConsult, Cabinet de Pentest Offensif à Paris
           </h1>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
             Notre mission : sécuriser les fintechs et SaaS B2B contre les attaques réelles.
@@ -115,44 +117,38 @@ export default function AProposPage() {
       {/* Hall of Fame */}
       <section className="bg-[#0A0A0A] section-padding border-t border-white/5">
         <div className="section-container">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 bg-red-600/10 rounded-xl flex items-center justify-center">
               <Trophy className="w-5 h-5 text-red-600" />
             </div>
             <h2 className="font-display text-2xl md:text-3xl font-bold text-white">
-              Hall of Fame — Preuves de notre expertise
+              Hall of Fame
             </h2>
           </div>
-          <div className="bg-[#1A1A1A] rounded-2xl border border-white/5 p-8">
-            <p className="text-gray-300 text-base leading-relaxed mb-6">
-              Nos chercheurs ont découvert et divulgué responsablement des vulnérabilités
-              reconnues par les programmes de bug bounty de{' '}
-              <strong className="text-white">Google</strong>,{' '}
-              <strong className="text-white">Microsoft</strong>,{' '}
-              <strong className="text-white">Meta</strong> et le{' '}
-              <strong className="text-white">US Department of Defense</strong>.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {hallOfFame.map((org) => (
-                <div
-                  key={org.name}
-                  className="bg-[#0A0A0A] rounded-xl border border-white/5 p-4 text-center"
-                >
-                  <Trophy className={`w-5 h-5 mx-auto mb-2 ${org.color}`} />
-                  <p className="text-white font-semibold text-sm">{org.name}</p>
-                  <p className="text-gray-500 text-xs mt-1">Bug Bounty Hall of Fame</p>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              Voir le détail :{' '}
-              <Link
-                href="/blog/hall-of-fame-google-microsoft-meta"
-                className="text-red-500 hover:text-red-400 underline underline-offset-2 transition-colors"
+          <p className="text-gray-300 text-base leading-relaxed mb-6">
+            Nos chercheurs ont été reconnus par les programmes bug bounty de{' '}
+            <strong className="text-white">Google</strong>,{' '}
+            <strong className="text-white">Microsoft</strong>,{' '}
+            <strong className="text-white">Meta</strong> et le{' '}
+            <strong className="text-white">US DoD</strong>.{' '}
+            <Link
+              href="/blog/hall-of-fame-google-microsoft-meta"
+              className="text-red-500 hover:text-red-400 underline underline-offset-2 transition-colors"
+            >
+              En savoir plus
+            </Link>
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {hallOfFame.map((org) => (
+              <div
+                key={org.name}
+                className="bg-[#1A1A1A] rounded-xl border border-white/5 p-4 text-center"
               >
-                notre article Hall of Fame
-              </Link>
-            </p>
+                <Trophy className={`w-5 h-5 mx-auto mb-2 ${org.color}`} />
+                <p className="text-white font-semibold text-sm">{org.name}</p>
+                <p className="text-gray-500 text-xs mt-1">Bug Bounty Hall of Fame</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -247,43 +243,6 @@ export default function AProposPage() {
                 <p className="text-gray-400 text-sm leading-relaxed">{val.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Nos tarifs */}
-      <section className="bg-[#0A0A0A] section-padding border-t border-white/5">
-        <div className="section-container">
-          <div className="bg-[#1A1A1A] rounded-2xl border border-red-600/20 p-8 max-w-2xl">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-red-600/10 rounded-xl flex items-center justify-center">
-                <Euro className="w-5 h-5 text-red-600" />
-              </div>
-              <h2 className="font-display text-2xl font-bold text-white">Nos tarifs</h2>
-            </div>
-            <div className="space-y-3">
-              <div className="flex items-center justify-between py-3 border-b border-white/5">
-                <span className="text-gray-400 text-sm">TJM horaire</span>
-                <span className="text-white font-semibold">160 €/h</span>
-              </div>
-              <div className="flex items-center justify-between py-3 border-b border-white/5">
-                <span className="text-gray-400 text-sm">TJM journalier</span>
-                <span className="text-white font-semibold">1 280 €/jour</span>
-              </div>
-              <div className="flex items-center justify-between py-3">
-                <span className="text-gray-400 text-sm">Panier moyen par mission</span>
-                <span className="text-red-500 font-bold">4 000 € – 20 000 €</span>
-              </div>
-            </div>
-            <p className="text-xs text-gray-500 mt-4">
-              Devis gratuit, personnalisé selon votre périmètre et contraintes.{' '}
-              <Link
-                href="/pentest-web"
-                className="text-red-500 hover:text-red-400 underline underline-offset-2 transition-colors"
-              >
-                Voir nos prestations pentest web
-              </Link>
-            </p>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { MapPin, Mail, Clock, CheckCircle, Euro } from 'lucide-react'
+import { MapPin, Mail, Clock, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/ui/Breadcrumb'
 import ContactForm from '@/components/ui/ContactForm'
 
@@ -142,26 +142,9 @@ export default function ContactPage() {
 
               {/* Tarifs */}
               <div className="bg-[#1A1A1A] rounded-xl p-5 border border-red-600/20">
-                <div className="flex items-center gap-2 mb-3">
-                  <Euro className="w-4 h-4 text-red-600" />
-                  <h2 className="font-display text-sm font-bold text-white">Nos tarifs</h2>
-                </div>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex justify-between text-gray-300">
-                    <span className="text-gray-400">TJM horaire</span>
-                    <span className="font-semibold text-white">160 €/h</span>
-                  </li>
-                  <li className="flex justify-between text-gray-300">
-                    <span className="text-gray-400">TJM journalier</span>
-                    <span className="font-semibold text-white">1 280 €/jour</span>
-                  </li>
-                  <li className="pt-2 border-t border-white/5 flex justify-between text-gray-300">
-                    <span className="text-gray-400">Panier moyen</span>
-                    <span className="font-semibold text-red-500">4 000 € – 20 000 €</span>
-                  </li>
-                </ul>
-                <p className="text-xs text-gray-500 mt-3">
-                  Devis gratuit, personnalisé selon votre périmètre.
+                <h2 className="font-display text-sm font-bold text-white mb-2">Devis personnalisé</h2>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  Contactez-nous pour un devis personnalisé gratuit sous 48h.
                 </p>
               </div>
             </div>
