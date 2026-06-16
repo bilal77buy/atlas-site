@@ -1,7 +1,7 @@
 
 
 const nextConfig = {
-  generateBuildId: async () => 'build-' + Date.now(),
+  generateBuildId: async () => 'build-v2-' + Date.now(),
   images: {
     formats: ['image/avif', 'image/webp'],
   },
