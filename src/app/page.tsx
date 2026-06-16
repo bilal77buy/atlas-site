@@ -228,9 +228,11 @@ export default function HomePage() {
       />
 
       {/* ── HERO ── */}
-      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-transparent pointer-events-none" />
-        <div className="absolute top-1/3 right-0 w-96 h-96 bg-red-600/5 rounded-full blur-3xl pointer-events-none" />
+      <section
+        className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1600&q=80')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0 bg-[#0A0A0A]/85 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative py-16 md:py-24">
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-600 bg-red-600/10 border border-red-600/20 rounded-full px-4 py-2 mb-6">
@@ -541,8 +543,12 @@ export default function HomePage() {
       </section>
 
       {/* ── CTA FINAL ── */}
-      <section className="py-20 bg-[#111111] border-t border-white/5">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section
+        className="relative py-20 overflow-hidden"
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=80')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
+        <div className="absolute inset-0 bg-[#0A0A0A]/85" />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AlertTriangle className="w-10 h-10 text-red-600 mx-auto mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Vos systèmes sont-ils réellement sécurisés ?
