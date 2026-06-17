@@ -21,7 +21,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
   description:
-    'Cabinet de pentest offensif à Paris. Tests d\'intrusion manuels pour fintechs et SaaS B2B. Devis gratuit sous 48h. Experts certifiés OSCP/CEH.',
+    'Atlas RedConsult — Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise, boîte blanche. Red Team, audit sécurité, conformité DORA & NIS2. Devis gratuit sous 48h.',
   alternates: { canonical: 'https://atlasredconsult.com' },
   openGraph: {
     title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
