@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Conformité RGPD : tests d\'intrusion pour sécuriser vos données personnelles. Art. 32 RGPD. Cabinet Paris. Devis pentest RGPD gratuit 48h.',
   alternates: {
-    canonical: 'https://atlasredconsult.fr/conformite-rgpd',
+    canonical: 'https://atlasredconsult.com/conformite-rgpd',
   },
 }
 
@@ -17,14 +17,14 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://atlasredconsult.fr/conformite-rgpd#service',
+      '@id': 'https://atlasredconsult.com/conformite-rgpd#service',
       name: 'Conformité RGPD — Pentest Protection des Données Personnelles',
       description:
         'Tests d\'intrusion pour la conformité RGPD (Article 32) : identification des vulnérabilités exposant les données personnelles, rapport documenté pour votre DPO et la CNIL.',
       provider: {
         '@type': 'Organization',
         name: 'Atlas RedConsult',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Paris',
@@ -38,8 +38,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
-        { '@type': 'ListItem', position: 2, name: 'Conformité RGPD', item: 'https://atlasredconsult.fr/conformite-rgpd' },
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
+        { '@type': 'ListItem', position: 2, name: 'Conformité RGPD', item: 'https://atlasredconsult.com/conformite-rgpd' },
       ],
     },
     {

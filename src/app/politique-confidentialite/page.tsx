@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: "Politique de Confidentialité | Atlas RedConsult",
   description: "Politique de confidentialité d'Atlas RedConsult. Comment nous collectons, utilisons et protégeons vos données personnelles conformément au RGPD.",
-  alternates: { canonical: 'https://atlasredconsult.fr/politique-confidentialite' },
+  alternates: { canonical: 'https://atlasredconsult.com/politique-confidentialite' },
   robots: { index: false },
 }
 

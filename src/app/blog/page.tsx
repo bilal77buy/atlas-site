@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Blog Sécurité Offensive — Articles Pentest et Cybersécurité | Atlas RedConsult',
   description: "Articles techniques sur le pentest, les vulnérabilités web, la conformité réglementaire et la cybersécurité offensive par les experts d'Atlas RedConsult.",
-  alternates: { canonical: 'https://atlasredconsult.fr/blog' },
+  alternates: { canonical: 'https://atlasredconsult.com/blog' },
 }
 
 const articles = [
@@ -31,9 +31,9 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'Blog Atlas RedConsult',
-  url: 'https://atlasredconsult.fr/blog',
+  url: 'https://atlasredconsult.com/blog',
   description: 'Articles techniques sur le pentest et la cybersécurité offensive',
-  publisher: { '@type': 'Organization', name: 'Atlas RedConsult', url: 'https://atlasredconsult.fr' },
+  publisher: { '@type': 'Organization', name: 'Atlas RedConsult', url: 'https://atlasredconsult.com' },
 }
 
 export default function BlogPage() {

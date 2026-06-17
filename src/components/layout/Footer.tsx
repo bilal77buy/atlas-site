@@ -109,7 +109,7 @@ export default function Footer() {
             </ul>
             <div className="mt-6">
               <a
-                href="mailto:contact@atlasredconsult.fr"
+                href="mailto:contact@atlasredconsult.com"
                 className="text-[#9CA3AF] hover:text-white text-sm transition-colors"
               >
                 contact.atlascyber@gmail.com

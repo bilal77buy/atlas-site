@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://atlasredconsult.fr'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://atlasredconsult.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -91,7 +91,7 @@ export default function RootLayout({
     description: 'Cabinet de pentest offensif B2B spécialisé en tests d\'intrusion et audit cybersécurité',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
-    email: 'contact@atlasredconsult.fr',
+    email: 'contact@atlasredconsult.com',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'FR',

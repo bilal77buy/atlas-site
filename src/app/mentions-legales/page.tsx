@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: "Mentions Légales | Atlas RedConsult",
   description: "Mentions légales d'Atlas RedConsult — cabinet de pentest et tests d'intrusion, 60 rue François 1er, 75008 Paris.",
-  alternates: { canonical: 'https://atlasredconsult.fr/mentions-legales' },
+  alternates: { canonical: 'https://atlasredconsult.com/mentions-legales' },
   robots: { index: false },
 }
 

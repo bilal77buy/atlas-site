@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Audit PCI-DSS v4.0 : tests d\'intrusion obligatoires pour commerçants et PSP. Exigence 11.4. Cabinet Paris certifié. Devis pentest PCI-DSS 48h.',
   alternates: {
-    canonical: 'https://atlasredconsult.fr/audit-pci-dss',
+    canonical: 'https://atlasredconsult.com/audit-pci-dss',
   },
 }
 
@@ -17,14 +17,14 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://atlasredconsult.fr/audit-pci-dss#service',
+      '@id': 'https://atlasredconsult.com/audit-pci-dss#service',
       name: 'Audit PCI-DSS — Tests d\'Intrusion Obligatoires Conformité Paiement',
       description:
         'Audit PCI-DSS v4.0 avec tests d\'intrusion obligatoires (exigence 11.4) pour commerçants, PSP et prestataires de services de paiement.',
       provider: {
         '@type': 'Organization',
         name: 'Atlas RedConsult',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Paris',
@@ -38,8 +38,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
-        { '@type': 'ListItem', position: 2, name: 'Audit PCI-DSS', item: 'https://atlasredconsult.fr/audit-pci-dss' },
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
+        { '@type': 'ListItem', position: 2, name: 'Audit PCI-DSS', item: 'https://atlasredconsult.com/audit-pci-dss' },
       ],
     },
     {

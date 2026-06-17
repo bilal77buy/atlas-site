@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   title: 'Audit Sécurité Informatique Paris — Cabinet Expert | Atlas RedConsult',
   description:
     'Audit de sécurité informatique par des experts certifiés à Paris. Analyse complète de vos systèmes, réseaux et applications. Devis gratuit 48h.',
-  alternates: { canonical: 'https://atlasredconsult.fr/audit-securite-informatique' },
+  alternates: { canonical: 'https://atlasredconsult.com/audit-securite-informatique' },
   openGraph: {
     title: 'Audit Sécurité Informatique Paris — Cabinet Expert | Atlas RedConsult',
     description:
       'Audit de sécurité informatique par des experts certifiés à Paris. Analyse complète de vos systèmes, réseaux et applications. Devis gratuit 48h.',
-    url: 'https://atlasredconsult.fr/audit-securite-informatique',
+    url: 'https://atlasredconsult.com/audit-securite-informatique',
   },
 }
 
@@ -192,32 +192,32 @@ export default function AuditSecuriteInformatiqueePage() {
     '@graph': [
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://atlasredconsult.fr/audit-securite-informatique/#breadcrumb',
+        '@id': 'https://atlasredconsult.com/audit-securite-informatique/#breadcrumb',
         itemListElement: [
           {
             '@type': 'ListItem',
             position: 1,
             name: 'Accueil',
-            item: 'https://atlasredconsult.fr',
+            item: 'https://atlasredconsult.com',
           },
           {
             '@type': 'ListItem',
             position: 2,
             name: 'Audit de sécurité informatique',
-            item: 'https://atlasredconsult.fr/audit-securite-informatique',
+            item: 'https://atlasredconsult.com/audit-securite-informatique',
           },
         ],
       },
       {
         '@type': ['Service', 'ProfessionalService'],
-        '@id': 'https://atlasredconsult.fr/audit-securite-informatique/#service',
+        '@id': 'https://atlasredconsult.com/audit-securite-informatique/#service',
         name: 'Audit de sécurité informatique',
         description:
           'Audit de sécurité informatique complet par des experts certifiés à Paris. Analyse de vos systèmes, réseaux, applications et gouvernance.',
         provider: {
           '@type': 'ProfessionalService',
           name: 'Atlas RedConsult',
-          url: 'https://atlasredconsult.fr',
+          url: 'https://atlasredconsult.com',
           address: {
             '@type': 'PostalAddress',
             streetAddress: '60 rue François 1er',
@@ -231,11 +231,11 @@ export default function AuditSecuriteInformatiqueePage() {
           { '@type': 'Country', name: 'France' },
         ],
         serviceType: 'Audit de sécurité informatique',
-        url: 'https://atlasredconsult.fr/audit-securite-informatique',
+        url: 'https://atlasredconsult.com/audit-securite-informatique',
       },
       {
         '@type': 'FAQPage',
-        '@id': 'https://atlasredconsult.fr/audit-securite-informatique/#faq',
+        '@id': 'https://atlasredconsult.com/audit-securite-informatique/#faq',
         mainEntity: faqItems.map((item) => ({
           '@type': 'Question',
           name: item.question,
@@ -672,7 +672,7 @@ export default function AuditSecuriteInformatiqueePage() {
           <p className="text-gray-500 text-sm">
             60 rue François 1er, 75008 Paris •{' '}
             <Link href="/contact" className="text-red-600 hover:underline">
-              contact@atlasredconsult.fr
+              contact@atlasredconsult.com
             </Link>{' '}
             •{' '}
             <Link href="/conformite-dora" className="text-gray-400 hover:text-white transition-colors">

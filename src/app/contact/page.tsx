@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   title: 'Devis Pentest Gratuit — Réponse 48h | Atlas RedConsult',
   description:
     'Demandez votre devis pentest gratuit. Réponse sous 48h. Cabinet Atlas RedConsult Paris 75008, 60 rue François 1er. Tests d\'intrusion experts certifiés.',
-  alternates: { canonical: 'https://atlasredconsult.fr/contact' },
+  alternates: { canonical: 'https://atlasredconsult.com/contact' },
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Demander un devis pentest',
-  url: 'https://atlasredconsult.fr/contact',
+  url: 'https://atlasredconsult.com/contact',
   mainEntity: {
     '@type': 'LocalBusiness',
     name: 'Atlas RedConsult',

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Audit NIS2 : tests d\'intrusion pour conformité directive NIS2. Entités essentielles et importantes. Cabinet Paris certifié. Devis gratuit sous 48h.',
   alternates: {
-    canonical: 'https://atlasredconsult.fr/audit-nis2',
+    canonical: 'https://atlasredconsult.com/audit-nis2',
   },
 }
 
@@ -17,14 +17,14 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://atlasredconsult.fr/audit-nis2#service',
+      '@id': 'https://atlasredconsult.com/audit-nis2#service',
       name: 'Audit NIS2 — Tests de Sécurité pour la Conformité Directive NIS2',
       description:
         'Audit et tests d\'intrusion pour la mise en conformité des entités essentielles et importantes avec la directive NIS2 transposée en droit français.',
       provider: {
         '@type': 'Organization',
         name: 'Atlas RedConsult',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Paris',
@@ -38,8 +38,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
-        { '@type': 'ListItem', position: 2, name: 'Audit NIS2', item: 'https://atlasredconsult.fr/audit-nis2' },
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
+        { '@type': 'ListItem', position: 2, name: 'Audit NIS2', item: 'https://atlasredconsult.com/audit-nis2' },
       ],
     },
     {

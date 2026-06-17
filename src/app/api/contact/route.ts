@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
 
     // TODO: Send email via Resend
     // const resend = new Resend(process.env.RESEND_API_KEY)
-    // await resend.emails.send({ from: 'noreply@atlasredconsult.fr', to: process.env.CONTACT_EMAIL, subject: `Nouvelle demande de ${entreprise}`, ... })
+    // await resend.emails.send({ from: 'noreply@atlasredconsult.com', to: process.env.CONTACT_EMAIL, subject: `Nouvelle demande de ${entreprise}`, ... })
 
     return NextResponse.json({ success: true })
   } catch (error) {

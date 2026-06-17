@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Conformité NIS2 : guide complet des obligations cybersécurité. Mise en conformité avec tests d\'intrusion. Cabinet Atlas RedConsult Paris. Devis 48h.',
   alternates: {
-    canonical: 'https://atlasredconsult.fr/conformite-nis2',
+    canonical: 'https://atlasredconsult.com/conformite-nis2',
   },
 }
 
@@ -17,14 +17,14 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://atlasredconsult.fr/conformite-nis2#service',
+      '@id': 'https://atlasredconsult.com/conformite-nis2#service',
       name: 'Conformité NIS2 — Mise en Conformité Directive Cybersécurité',
       description:
         'Accompagnement complet pour la mise en conformité avec la directive NIS2 : analyse de risque, tests d\'intrusion, documentation, et suivi post-audit.',
       provider: {
         '@type': 'Organization',
         name: 'Atlas RedConsult',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Paris',
@@ -38,8 +38,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
-        { '@type': 'ListItem', position: 2, name: 'Conformité NIS2', item: 'https://atlasredconsult.fr/conformite-nis2' },
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
+        { '@type': 'ListItem', position: 2, name: 'Conformité NIS2', item: 'https://atlasredconsult.com/conformite-nis2' },
       ],
     },
     {

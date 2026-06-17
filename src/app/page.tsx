@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
   description:
     'Cabinet de pentest offensif à Paris. Tests d\'intrusion manuels pour fintechs et SaaS B2B. Devis gratuit sous 48h. Experts certifiés OSCP/CEH.',
-  alternates: { canonical: 'https://atlasredconsult.fr' },
+  alternates: { canonical: 'https://atlasredconsult.com' },
   openGraph: {
     title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
     description:
       'Cabinet de pentest offensif à Paris. Tests d\'intrusion manuels pour fintechs et SaaS B2B. Devis gratuit sous 48h.',
-    url: 'https://atlasredconsult.fr',
+    url: 'https://atlasredconsult.com',
   },
 }
 
@@ -156,13 +156,13 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': ['LocalBusiness', 'ProfessionalService'],
-        '@id': 'https://atlasredconsult.fr/#business',
+        '@id': 'https://atlasredconsult.com/#business',
         name: 'Atlas RedConsult',
         description:
           'Cabinet de pentest offensif à Paris spécialisé en tests d\'intrusion pour fintechs et SaaS B2B.',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         telephone: '',
-        email: 'contact@atlasredconsult.fr',
+        email: 'contact@atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           streetAddress: '60 rue François 1er',
@@ -207,7 +207,7 @@ export default function HomePage() {
       },
       {
         '@type': 'FAQPage',
-        '@id': 'https://atlasredconsult.fr/#faq',
+        '@id': 'https://atlasredconsult.com/#faq',
         mainEntity: faqItems.map((item) => ({
           '@type': 'Question',
           name: item.question,
@@ -573,7 +573,7 @@ export default function HomePage() {
           <p className="text-gray-500 text-sm mt-6">
             60 rue François 1er, 75008 Paris •{' '}
             <Link href="/contact" className="text-red-600 hover:underline">
-              contact@atlasredconsult.fr
+              contact@atlasredconsult.com
             </Link>{' '}
             •{' '}
             <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">

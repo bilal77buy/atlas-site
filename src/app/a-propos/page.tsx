@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Cabinet Atlas RedConsult — Experts Pentest Paris | Atlas RedConsult',
   description:
     'Atlas RedConsult : cabinet de pentest offensif fondé par des experts sécurité. Hall of Fame Google, Microsoft, Meta, US DoD. Paris 75008. En savoir plus.',
-  alternates: { canonical: 'https://atlasredconsult.fr/a-propos' },
+  alternates: { canonical: 'https://atlasredconsult.com/a-propos' },
 }
 
 const jsonLd = [
@@ -17,18 +17,18 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     name: 'À propos — Atlas RedConsult',
-    url: 'https://atlasredconsult.fr/a-propos',
+    url: 'https://atlasredconsult.com/a-propos',
     description:
       'Cabinet de pentest offensif B2B fondé par des experts en sécurité offensive. Hall of Fame Google, Microsoft, Meta et US DoD.',
-    mainEntity: { '@id': 'https://atlasredconsult.fr/#organization' },
+    mainEntity: { '@id': 'https://atlasredconsult.com/#organization' },
   },
   {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    '@id': 'https://atlasredconsult.fr/#organization',
+    '@id': 'https://atlasredconsult.com/#organization',
     name: 'Atlas RedConsult',
-    url: 'https://atlasredconsult.fr',
-    logo: 'https://atlasredconsult.fr/logo.png',
+    url: 'https://atlasredconsult.com',
+    logo: 'https://atlasredconsult.com/logo.png',
     email: 'contact.atlascyber@gmail.com',
     address: {
       '@type': 'PostalAddress',

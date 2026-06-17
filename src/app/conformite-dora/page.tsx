@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Conformité DORA pour entités financières : TLPT (Threat-Led Penetration Testing), tests d\'intrusion réglementaires. Cabinet certifié Paris. Devis 48h.',
   alternates: {
-    canonical: 'https://atlasredconsult.fr/conformite-dora',
+    canonical: 'https://atlasredconsult.com/conformite-dora',
   },
 }
 
@@ -17,14 +17,14 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Service',
-      '@id': 'https://atlasredconsult.fr/conformite-dora#service',
+      '@id': 'https://atlasredconsult.com/conformite-dora#service',
       name: 'Conformité DORA — Tests d\'Intrusion TLPT',
       description:
         'Accompagnement des entités financières dans leur conformité au règlement DORA : TLPT, tests d\'intrusion réglementaires, rapports auditables.',
       provider: {
         '@type': 'Organization',
         name: 'Atlas RedConsult',
-        url: 'https://atlasredconsult.fr',
+        url: 'https://atlasredconsult.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Paris',
@@ -38,8 +38,8 @@ const jsonLd = {
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
-        { '@type': 'ListItem', position: 2, name: 'Conformité DORA', item: 'https://atlasredconsult.fr/conformite-dora' },
+        { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
+        { '@type': 'ListItem', position: 2, name: 'Conformité DORA', item: 'https://atlasredconsult.com/conformite-dora' },
       ],
     },
     {

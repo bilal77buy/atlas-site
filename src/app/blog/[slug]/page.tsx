@@ -268,7 +268,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${article.title} | Atlas RedConsult`,
     description: article.description,
-    alternates: { canonical: `https://atlasredconsult.fr/blog/${params.slug}` },
+    alternates: { canonical: `https://atlasredconsult.com/blog/${params.slug}` },
   }
 }
 
@@ -281,7 +281,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
     '@type': 'Article',
     headline: article.title,
     datePublished: article.date,
-    author: { '@type': 'Organization', name: 'Atlas RedConsult', url: 'https://atlasredconsult.fr' },
+    author: { '@type': 'Organization', name: 'Atlas RedConsult', url: 'https://atlasredconsult.com' },
     publisher: { '@type': 'Organization', name: 'Atlas RedConsult' },
     description: article.description,
   }

@@ -6,10 +6,10 @@ export const dynamic = 'force-dynamic'
 export const metadata: Metadata = {
   title: "Cybersécurité Offensive — Services Attaque et Défense | Atlas RedConsult",
   description: "Cybersécurité offensive : tests d'intrusion, red team, audit de sécurité. Approche attaquant pour renforcer vos défenses. Cabinet Paris. Devis 48h.",
-  alternates: { canonical: 'https://atlasredconsult.fr/cybersecurite-offensive' },
+  alternates: { canonical: 'https://atlasredconsult.com/cybersecurite-offensive' },
 }
 
-const schema = { '@context': 'https://schema.org', '@graph': [{ '@type': 'Service', name: 'Cybersécurité Offensive', provider: { '@type': 'ProfessionalService', name: 'Atlas RedConsult', url: 'https://atlasredconsult.fr' }, serviceType: 'Offensive Cybersecurity', areaServed: 'FR' }, { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' }, { '@type': 'ListItem', position: 2, name: 'Cybersécurité Offensive', item: 'https://atlasredconsult.fr/cybersecurite-offensive' }] }] }
+const schema = { '@context': 'https://schema.org', '@graph': [{ '@type': 'Service', name: 'Cybersécurité Offensive', provider: { '@type': 'ProfessionalService', name: 'Atlas RedConsult', url: 'https://atlasredconsult.com' }, serviceType: 'Offensive Cybersecurity', areaServed: 'FR' }, { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' }, { '@type': 'ListItem', position: 2, name: 'Cybersécurité Offensive', item: 'https://atlasredconsult.com/cybersecurite-offensive' }] }] }
 
 export default function CybersecuriteOffensivePage() {
   return (

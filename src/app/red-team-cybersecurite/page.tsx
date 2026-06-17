@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Red Team Cybersécurité — Simulation Attaque Avancée | Atlas RedConsult',
   description:
     "Red Team cybersécurité : simulation d'attaque APT complète. Tests d'intrusion avancés, phishing, mouvement latéral. Experts Paris. Devis gratuit.",
-  alternates: { canonical: 'https://atlasredconsult.fr/red-team-cybersecurite' },
+  alternates: { canonical: 'https://atlasredconsult.com/red-team-cybersecurite' },
 }
 
 export default function RedTeamCybersecurite() {
@@ -18,7 +18,7 @@ export default function RedTeamCybersecurite() {
     provider: {
       '@type': 'ProfessionalService',
       name: 'Atlas RedConsult',
-      url: 'https://atlasredconsult.fr',
+      url: 'https://atlasredconsult.com',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Paris',
@@ -34,12 +34,12 @@ export default function RedTeamCybersecurite() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.fr' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://atlasredconsult.com' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Red Team Cybersécurité',
-        item: 'https://atlasredconsult.fr/red-team-cybersecurite',
+        item: 'https://atlasredconsult.com/red-team-cybersecurite',
       },
     ],
   }
