@@ -80,6 +80,7 @@ export default function Navbar() {
 
             <Link href="/blog" className="text-sm text-[#9CA3AF] hover:text-white transition-colors">Blog</Link>
             <Link href="/a-propos" className="text-sm text-[#9CA3AF] hover:text-white transition-colors">À Propos</Link>
+            <a href="tel:+330787230292" className="text-sm text-[#9CA3AF] hover:text-white transition-colors font-medium">+33 07 87 23 02 92</a>
             <Link href="/contact" className="inline-flex items-center px-4 py-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-sm font-semibold rounded-lg transition-colors">
               Devis Gratuit
             </Link>

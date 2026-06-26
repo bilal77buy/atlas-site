@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+const CONTACT_EMAIL = 'contact@atlasredconsult.fr'
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -14,15 +16,31 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Email invalide' }, { status: 400 })
     }
 
-    // Log for now - connect to email service (Resend, SendGrid, etc.) via env vars
-    console.log('New contact submission:', { nom, entreprise, email, besoin })
-
-    // TODO: Send email via Resend
-    // const resend = new Resend(process.env.RESEND_API_KEY)
-    // await resend.emails.send({ from: 'noreply@atlasredconsult.com', to: process.env.CONTACT_EMAIL, subject: `Nouvelle demande de ${entreprise}`, ... })
+    if (process.env.RESEND_API_KEY) {
+      const { Resend } = await import('resend')
+      const resend = new Resend(process.env.RESEND_API_KEY)
+      await resend.emails.send({
+        from: 'Atlas RedConsult <onboarding@resend.dev>',
+        to: CONTACT_EMAIL,
+        subject: `Nouvelle demande de devis — ${entreprise}`,
+        html: `
+          <h2>Nouvelle demande de devis — Atlas RedConsult</h2>
+          <p><strong>Nom :</strong> ${nom}</p>
+          <p><strong>Entreprise :</strong> ${entreprise}</p>
+          <p><strong>Email :</strong> ${email}</p>
+          <p><strong>Téléphone :</strong> ${telephone || 'Non renseigné'}</p>
+          <p><strong>Besoin :</strong> ${besoin}</p>
+          <p><strong>Message :</strong></p>
+          <p>${message}</p>
+        `,
+      })
+    } else {
+      console.log('Contact form submission (no RESEND_API_KEY):', { nom, entreprise, email, besoin })
+    }
 
     return NextResponse.json({ success: true })
   } catch (error) {
+    console.error('Email error:', error)
     return NextResponse.json({ error: 'Erreur serveur' }, { status: 500 })
   }
 }

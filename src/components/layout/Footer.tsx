@@ -112,8 +112,13 @@ export default function Footer() {
                 href="mailto:contact@atlasredconsult.com"
                 className="text-[#9CA3AF] hover:text-white text-sm transition-colors"
               >
-                contact.atlascyber@gmail.com
+                contact@atlasredconsult.fr
               </a>
+              <div className="mt-2">
+                <a href="tel:+330787230292" className="text-[#9CA3AF] hover:text-white text-sm transition-colors">
+                  +33 07 87 23 02 92
+                </a>
+              </div>
             </div>
           </div>
         </div>
