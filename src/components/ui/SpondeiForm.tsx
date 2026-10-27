@@ -29,10 +29,22 @@ export default function SpondeiForm() {
   }, [])
 
   return (
-    <div
-      ref={ref}
-      className="w-full min-h-[800px]"
-      dangerouslySetInnerHTML={{ __html: SPONDEI_EMBED }}
-    />
+    <>
+      {/* Le script Spondei force un fond blanc sur le conteneur : on le remet en noir */}
+      <style>{`
+        #sp-container-standard,
+        #sp-frame-standard {
+          background: #0A0A0A !important;
+          background-color: #0A0A0A !important;
+          border: none !important;
+          color-scheme: dark;
+        }
+      `}</style>
+      <div
+        ref={ref}
+        className="w-full min-h-[800px] bg-[#0A0A0A] rounded-xl overflow-hidden"
+        dangerouslySetInnerHTML={{ __html: SPONDEI_EMBED }}
+      />
+    </>
   )
 }
