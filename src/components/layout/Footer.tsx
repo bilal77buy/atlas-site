@@ -115,8 +115,8 @@ export default function Footer() {
                 contact@atlasredconsult.fr
               </a>
               <div className="mt-2">
-                <a href="tel:+330787230292" className="text-[#9CA3AF] hover:text-white text-sm transition-colors">
-                  +33 07 87 23 02 92
+                <a href="tel:+33787230293" className="text-[#9CA3AF] hover:text-white text-sm transition-colors">
+                  +33 7 87 23 02 93
                 </a>
               </div>
             </div>

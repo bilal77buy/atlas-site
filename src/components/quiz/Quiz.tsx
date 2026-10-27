@@ -18,8 +18,8 @@ import {
 import { quizQuestions, MAX_SCORE, getQuizLevel } from '@/data/quizQuestions'
 
 const CALENDLY = 'https://calendly.com/contact-atlasredconsult/30min'
-const PHONE_HREF = 'tel:+330787230292'
-const PHONE_LABEL = '+33 07 87 23 02 92'
+const PHONE_HREF = 'tel:+33787230293'
+const PHONE_LABEL = '+33 7 87 23 02 93'
 
 type Phase = 'intro' | 'questions' | 'result'
 
