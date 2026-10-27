@@ -39,6 +39,12 @@ export default function SpondeiForm() {
           border: none !important;
           color-scheme: dark;
         }
+        /* Le contenu de l'iframe Spondei n'est pas stylable depuis le site :
+           on inverse ses couleurs (fond blanc -> noir) en conservant les teintes */
+        #sp-frame-standard {
+          filter: invert(1) hue-rotate(180deg);
+          background: #FFFFFF !important;
+        }
       `}</style>
       <div
         ref={ref}
