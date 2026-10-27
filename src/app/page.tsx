@@ -255,10 +255,10 @@ export default function HomePage() {
                 Demander un devis gratuit <ArrowRight className="w-5 h-5" />
               </Link>
               <Link
-                href="/audit-securite-informatique"
+                href="/quiz"
                 className="inline-flex items-center justify-center gap-2 border border-gray-700 hover:border-red-600/50 text-white font-semibold px-8 py-4 rounded-lg transition-colors text-base"
               >
-                Audit sécurité informatique
+                Évaluer ma maturité cyber
               </Link>
             </div>
             <div className="flex flex-wrap gap-6 text-sm text-gray-400">

@@ -78,6 +78,7 @@ export default function Navbar() {
               )}
             </div>
 
+            <Link href="/quiz" className="text-sm text-[#9CA3AF] hover:text-white transition-colors">Diagnostic Cyber</Link>
             <Link href="/blog" className="text-sm text-[#9CA3AF] hover:text-white transition-colors">Blog</Link>
             <Link href="/a-propos" className="text-sm text-[#9CA3AF] hover:text-white transition-colors">À Propos</Link>
             <a href="tel:+330787230292" className="text-sm text-[#9CA3AF] hover:text-white transition-colors font-medium">+33 07 87 23 02 92</a>
@@ -110,6 +111,7 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="pt-3 border-t border-[#2A2A2A] space-y-1">
+              <Link href="/quiz" className="block px-3 py-2 text-sm text-[#9CA3AF] hover:text-white rounded-lg hover:bg-[#0A0A0A] transition-colors" onClick={() => setMobileOpen(false)}>Diagnostic Cyber</Link>
               <Link href="/blog" className="block px-3 py-2 text-sm text-[#9CA3AF] hover:text-white rounded-lg hover:bg-[#0A0A0A] transition-colors" onClick={() => setMobileOpen(false)}>Blog</Link>
               <Link href="/a-propos" className="block px-3 py-2 text-sm text-[#9CA3AF] hover:text-white rounded-lg hover:bg-[#0A0A0A] transition-colors" onClick={() => setMobileOpen(false)}>À Propos</Link>
               <Link href="/contact" className="block w-full text-center px-4 py-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-sm font-semibold rounded-lg transition-colors mt-2" onClick={() => setMobileOpen(false)}>
