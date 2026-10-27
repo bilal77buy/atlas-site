@@ -13,18 +13,26 @@ export default function SpondeiForm() {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const container = ref.current
-    if (!container) return
+    if (!ref.current) return
 
-    // Le script est (ré)injecté après le montage du conteneur pour que le
-    // formulaire se charge aussi lors d'une navigation interne Next.js.
-    const script = document.createElement('script')
-    script.src = SPONDEI_SCRIPT
-    script.async = true
-    container.appendChild(script)
+    const w = window as unknown as {
+      SpondeiEmbed?: { init?: (root?: Document) => void; upgrade?: (root?: Document) => void }
+    }
 
-    return () => {
-      script.remove()
+    // Le script Spondei ne s'exécute qu'une seule fois par chargement de page
+    // (garde globale). Lors d'une navigation interne Next.js, il est déjà
+    // chargé : on relance simplement son initialisation sur le nouveau conteneur.
+    if (w.SpondeiEmbed?.init) {
+      w.SpondeiEmbed.upgrade?.(document)
+      w.SpondeiEmbed.init(document)
+      return
+    }
+
+    if (!document.querySelector(`script[src="${SPONDEI_SCRIPT}"]`)) {
+      const script = document.createElement('script')
+      script.src = SPONDEI_SCRIPT
+      script.async = true
+      document.body.appendChild(script)
     }
   }, [])
 
