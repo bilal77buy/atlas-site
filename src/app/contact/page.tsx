@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { MapPin, Mail, Clock, CheckCircle } from 'lucide-react'
 import Breadcrumb from '@/components/ui/Breadcrumb'
-import ContactForm from '@/components/ui/ContactForm'
+import SpondeiForm from '@/components/ui/SpondeiForm'
 
 export const dynamic = 'force-dynamic'
 
@@ -101,18 +101,8 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Form column */}
             <div className="lg:col-span-2">
-              {/* ============================================ */}
-              {/* SPONDEI CONTACT FORM — Replace with embed   */}
-              {/* ============================================ */}
-              {/*
-                <div id="spondei-contact-form" data-form-id="REPLACE_WITH_YOUR_SPONDEI_FORM_ID">
-                  Chargement du formulaire de contact...
-                </div>
-                <script src="https://app.spondei.com/embed.js" defer></script>
-              */}
-
-              {/* Fallback HTML form — active until Spondei embed is configured */}
-              <ContactForm />
+              {/* Formulaire de contact Spondei */}
+              <SpondeiForm />
             </div>
 
             {/* Sidebar */}
