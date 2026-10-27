@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: "Cybersécurité Offensive — Services Attaque et Défense | Atlas RedConsult",
+  title: "Cybersécurité Offensive | Services Attaque et Défense | Atlas RedConsult",
   description: "Cybersécurité offensive : tests d'intrusion, red team, audit de sécurité. Approche attaquant pour renforcer vos défenses. Cabinet Paris. Devis 48h.",
   alternates: { canonical: 'https://atlasredconsult.com/cybersecurite-offensive' },
 }
@@ -18,7 +18,7 @@ export default function CybersecuriteOffensivePage() {
       <main className="bg-[#0A0A0A] text-white min-h-screen">
         <section className="max-w-6xl mx-auto px-6 pt-24 pb-16">
           <nav className="text-sm text-gray-400 mb-6"><Link href="/" className="hover:text-red-500">Accueil</Link><span className="mx-2">/</span><span className="text-white">Cybersécurité Offensive</span></nav>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Cybersécurité Offensive — <span className="text-red-600">Approche Attaquant pour Renforcer vos Défenses</span></h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">Cybersécurité Offensive : <span className="text-red-600">Approche Attaquant pour Renforcer vos Défenses</span></h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">La cybersécurité offensive consiste à adopter la perspective et les techniques des attaquants pour identifier les vulnérabilités avant qu&apos;ils ne le fassent. C&apos;est le cœur de métier d&apos;Atlas RedConsult.</p>
           <Link href="/contact" className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors">Demander un devis gratuit →</Link>
         </section>
@@ -87,7 +87,7 @@ export default function CybersecuriteOffensivePage() {
         {/* <script src="https://app.spondei.com/embed.js" async></script> */}
         <section className="max-w-4xl mx-auto px-6 py-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Adoptez l&apos;approche offensive pour mieux vous défendre</h2>
-          <p className="text-gray-300 mb-8">Réponse sous 48h — Devis personnalisé — Cabinet Paris 75008</p>
+          <p className="text-gray-300 mb-8">Réponse sous 48h : Devis personnalisé, Cabinet Paris 75008</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors">Demander un devis gratuit</Link>
             <Link href="/audit-pentest" className="border border-gray-600 hover:border-red-600 text-white px-8 py-4 rounded-lg transition-colors">Voir l&apos;audit pentest</Link>

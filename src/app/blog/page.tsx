@@ -3,24 +3,24 @@ import Link from 'next/link'
 
 
 export const metadata: Metadata = {
-  title: 'Blog Sécurité Offensive — Articles Pentest et Cybersécurité | Atlas RedConsult',
+  title: 'Blog Sécurité Offensive | Articles Pentest et Cybersécurité | Atlas RedConsult',
   description: "Articles techniques sur le pentest, les vulnérabilités web, la conformité réglementaire et la cybersécurité offensive par les experts d'Atlas RedConsult.",
   alternates: { canonical: 'https://atlasredconsult.com/blog' },
 }
 
 const articles = [
-  { slug: 'vulnerabilite-idor-expliquee', title: 'Vulnérabilité IDOR — Insecure Direct Object Reference Expliquée', date: '2024-01-15', excerpt: "Comprendre la vulnérabilité IDOR : comment elle fonctionne, comment la détecter en pentest et comment s'en protéger efficacement." },
-  { slug: 'pentest-blackbox-vs-greybox-vs-whitebox', title: 'Pentest Black Box vs Grey Box vs White Box — Guide Complet', date: '2024-01-22', excerpt: "Comparaison des trois approches de test d'intrusion : avantages, inconvénients et cas d'usage pour chaque méthode." },
-  { slug: 'bola-bfla-securite-api', title: 'BOLA et BFLA — Vulnérabilités Critiques des APIs', date: '2024-02-05', excerpt: 'Broken Object Level Authorization et Broken Function Level Authorization : les vulnérabilités les plus critiques des APIs modernes.' },
-  { slug: 'ssrf-server-side-request-forgery', title: 'SSRF — Server Side Request Forgery : Comprendre et Prévenir', date: '2024-02-19', excerpt: "Comment les attaques SSRF permettent d'accéder aux ressources internes d'un serveur et comment s'en protéger dans un environnement cloud." },
-  { slug: 'oauth-vulnerabilites-pentest', title: 'Vulnérabilités OAuth 2.0 — Guide Pentest et Sécurisation', date: '2024-03-04', excerpt: 'Les failles OAuth 2.0 les plus courantes : open redirect, token leakage, absence de PKCE — comment les tester et les corriger.' },
-  { slug: 'methodologie-pentest-owasp', title: 'Méthodologie Pentest OWASP — Guide Complet OWASP Top 10', date: '2024-03-18', excerpt: "Comment les pentesteurs professionnels utilisent l'OWASP Top 10 comme framework pour conduire des tests d'intrusion rigoureux." },
-  { slug: 'dora-tests-tlpt-fintechs', title: 'DORA et Tests TLPT — Guide pour les Fintechs en 2024', date: '2024-04-01', excerpt: "Le règlement DORA impose des tests TLPT aux entités financières. Guide complet sur les obligations et comment s'y préparer." },
-  { slug: 'nis2-obligations-entreprises', title: 'NIS2 — Obligations Cybersécurité pour les Entreprises', date: '2024-04-15', excerpt: "La directive NIS2 étend les obligations de cybersécurité à des milliers d'entreprises européennes. Périmètre, obligations, sanctions." },
-  { slug: 'pci-dss-v4-ecommerce', title: "PCI-DSS v4.0 — Ce qui Change pour l'E-commerce", date: '2024-05-06', excerpt: 'PCI-DSS v4.0 introduit des changements majeurs pour les e-commerçants. Nouvelles exigences, obligation de pentest (req 11.4), délais.' },
-  { slug: 'rapport-pentest-comment-lire', title: 'Comment Lire un Rapport de Pentest — Guide Pratique', date: '2024-05-20', excerpt: 'Guide pour comprendre un rapport de pentest : scores CVSS, niveaux de risque, recommandations et priorisation des remédiations.' },
-  { slug: 'hall-of-fame-google-microsoft-meta', title: 'Hall of Fame Google, Microsoft, Meta — Notre Parcours Bug Bounty', date: '2024-06-03', excerpt: 'Atlas RedConsult reconnu dans les programmes de bug bounty de Google, Microsoft, Meta et le DoD américain. Notre parcours en responsible disclosure.' },
-  { slug: 'remediation-apres-pentest', title: 'Remédiation Après Pentest — Guide Complet de Correction', date: '2024-06-17', excerpt: "Comment corriger efficacement les vulnérabilités identifiées lors d'un pentest : priorisation, vérification des correctifs, contre-audit." },
+  { slug: 'vulnerabilite-idor-expliquee', title: 'Vulnérabilité IDOR : Insecure Direct Object Reference Expliquée', date: '2024-01-15', excerpt: "Comprendre la vulnérabilité IDOR : comment elle fonctionne, comment la détecter en pentest et comment s'en protéger efficacement." },
+  { slug: 'pentest-blackbox-vs-greybox-vs-whitebox', title: 'Pentest Black Box vs Grey Box vs White Box : Guide Complet', date: '2024-01-22', excerpt: "Comparaison des trois approches de test d'intrusion : avantages, inconvénients et cas d'usage pour chaque méthode." },
+  { slug: 'bola-bfla-securite-api', title: 'BOLA et BFLA : Vulnérabilités Critiques des APIs', date: '2024-02-05', excerpt: 'Broken Object Level Authorization et Broken Function Level Authorization : les vulnérabilités les plus critiques des APIs modernes.' },
+  { slug: 'ssrf-server-side-request-forgery', title: 'SSRF : Server Side Request Forgery : Comprendre et Prévenir', date: '2024-02-19', excerpt: "Comment les attaques SSRF permettent d'accéder aux ressources internes d'un serveur et comment s'en protéger dans un environnement cloud." },
+  { slug: 'oauth-vulnerabilites-pentest', title: 'Vulnérabilités OAuth 2.0 : Guide Pentest et Sécurisation', date: '2024-03-04', excerpt: 'Les failles OAuth 2.0 les plus courantes : open redirect, token leakage, absence de PKCE, comment les tester et les corriger.' },
+  { slug: 'methodologie-pentest-owasp', title: 'Méthodologie Pentest OWASP : Guide Complet OWASP Top 10', date: '2024-03-18', excerpt: "Comment les pentesteurs professionnels utilisent l'OWASP Top 10 comme framework pour conduire des tests d'intrusion rigoureux." },
+  { slug: 'dora-tests-tlpt-fintechs', title: 'DORA et Tests TLPT : Guide pour les Fintechs en 2024', date: '2024-04-01', excerpt: "Le règlement DORA impose des tests TLPT aux entités financières. Guide complet sur les obligations et comment s'y préparer." },
+  { slug: 'nis2-obligations-entreprises', title: 'NIS2 : Obligations Cybersécurité pour les Entreprises', date: '2024-04-15', excerpt: "La directive NIS2 étend les obligations de cybersécurité à des milliers d'entreprises européennes. Périmètre, obligations, sanctions." },
+  { slug: 'pci-dss-v4-ecommerce', title: "PCI-DSS v4.0 : Ce qui Change pour l'E-commerce", date: '2024-05-06', excerpt: 'PCI-DSS v4.0 introduit des changements majeurs pour les e-commerçants. Nouvelles exigences, obligation de pentest (req 11.4), délais.' },
+  { slug: 'rapport-pentest-comment-lire', title: 'Comment Lire un Rapport de Pentest : Guide Pratique', date: '2024-05-20', excerpt: 'Guide pour comprendre un rapport de pentest : scores CVSS, niveaux de risque, recommandations et priorisation des remédiations.' },
+  { slug: 'hall-of-fame-google-microsoft-meta', title: 'Hall of Fame Google, Microsoft, Meta, Notre Parcours Bug Bounty', date: '2024-06-03', excerpt: 'Atlas RedConsult reconnu dans les programmes de bug bounty de Google, Microsoft, Meta et le DoD américain. Notre parcours en responsible disclosure.' },
+  { slug: 'remediation-apres-pentest', title: 'Remédiation Après Pentest : Guide Complet de Correction', date: '2024-06-17', excerpt: "Comment corriger efficacement les vulnérabilités identifiées lors d'un pentest : priorisation, vérification des correctifs, contre-audit." },
 ]
 
 function formatDate(dateStr: string) {

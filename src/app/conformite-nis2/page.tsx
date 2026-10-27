@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Conformité NIS2 — Guide Complet Directive Cybersécurité | Atlas RedConsult',
+  title: 'Conformité NIS2 | Guide Complet Directive Cybersécurité | Atlas RedConsult',
   description:
     'Conformité NIS2 : guide complet des obligations cybersécurité. Mise en conformité avec tests d\'intrusion. Cabinet Atlas RedConsult Paris. Devis 48h.',
   alternates: {
@@ -18,7 +18,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://atlasredconsult.com/conformite-nis2#service',
-      name: 'Conformité NIS2 — Mise en Conformité Directive Cybersécurité',
+      name: 'Conformité NIS2 | Mise en Conformité Directive Cybersécurité',
       description:
         'Accompagnement complet pour la mise en conformité avec la directive NIS2 : analyse de risque, tests d\'intrusion, documentation, et suivi post-audit.',
       provider: {
@@ -91,10 +91,10 @@ export default function ConformiteNis2Page() {
             <span className="text-gray-300">Conformité NIS2</span>
           </nav>
           <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">
-            Directive NIS2 — Guide Complet
+            Directive NIS2 : Guide Complet
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            Conformité NIS2 — Mise en Conformité avec la Directive Cybersécurité Européenne
+            Conformité NIS2 : Mise en Conformité avec la Directive Cybersécurité Européenne
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
             La directive NIS2 impose des obligations de sécurité concrètes à des milliers d'organisations françaises. Entre la complexité du texte et la pression des délais, la mise en conformité représente un défi majeur. Atlas RedConsult vous accompagne avec une approche structurée et des tests d'intrusion qui font la différence.
@@ -195,7 +195,7 @@ export default function ConformiteNis2Page() {
               {/* SPONDEI FORM PLACEHOLDER */}
               {/* <div id="spondei-form" data-form-id="REPLACE_ID">Chargement...</div> */}
               {/* <script src="https://app.spondei.com/embed.js" async></script> */}
-              <p className="text-gray-500 text-sm text-center">Formulaire de contact — disponible prochainement</p>
+              <p className="text-gray-500 text-sm text-center">Formulaire de contact : disponible prochainement</p>
             </div>
           </section>
 
@@ -224,9 +224,9 @@ export default function ConformiteNis2Page() {
           <section className="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800">
             <h3 className="text-lg font-semibold text-white mb-4">Services et ressources associés</h3>
             <ul className="space-y-2">
-              <li><Link href="/audit-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Audit NIS2 — Tests d'intrusion pour la directive NIS2</Link></li>
-              <li><Link href="/conformite-dora" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité DORA — Réglementation pour le secteur financier</Link></li>
-              <li><Link href="/pentest-entreprise" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Entreprise — Tests d'intrusion tous secteurs</Link></li>
+              <li><Link href="/audit-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Audit NIS2 : Tests d'intrusion pour la directive NIS2</Link></li>
+              <li><Link href="/conformite-dora" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité DORA : Réglementation pour le secteur financier</Link></li>
+              <li><Link href="/pentest-entreprise" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Entreprise : Tests d'intrusion tous secteurs</Link></li>
             </ul>
           </section>
 

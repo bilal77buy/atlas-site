@@ -20,12 +20,12 @@ import {
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Audit Sécurité Informatique Paris — Cabinet Expert | Atlas RedConsult',
+  title: 'Audit Sécurité Informatique Paris | Cabinet Expert | Atlas RedConsult',
   description:
     'Audit de sécurité informatique par des experts certifiés à Paris. Analyse complète de vos systèmes, réseaux et applications. Devis gratuit 48h.',
   alternates: { canonical: 'https://atlasredconsult.com/audit-securite-informatique' },
   openGraph: {
-    title: 'Audit Sécurité Informatique Paris — Cabinet Expert | Atlas RedConsult',
+    title: 'Audit Sécurité Informatique Paris | Cabinet Expert | Atlas RedConsult',
     description:
       'Audit de sécurité informatique par des experts certifiés à Paris. Analyse complète de vos systèmes, réseaux et applications. Devis gratuit 48h.',
     url: 'https://atlasredconsult.com/audit-securite-informatique',
@@ -134,7 +134,7 @@ const livrables = [
   {
     title: 'Synthèse exécutive',
     description:
-      'Document de 2 à 5 pages destiné à la direction générale. Présente le niveau de risque global, les vulnérabilités critiques identifiées et les 3 priorités de remédiation immédiates. Aucun jargon technique — conçu pour une prise de décision rapide.',
+      'Document de 2 à 5 pages destiné à la direction générale. Présente le niveau de risque global, les vulnérabilités critiques identifiées et les 3 priorités de remédiation immédiates. Aucun jargon technique, conçu pour une prise de décision rapide.',
   },
   {
     title: 'Rapport technique détaillé',
@@ -162,7 +162,7 @@ const faqItems = [
   {
     question: 'Quelle est la différence entre un audit de sécurité informatique et un pentest ?',
     answer:
-      'L\'audit de sécurité informatique est une évaluation globale de votre posture de sécurité : il examine vos configurations, vos politiques, vos processus et votre gouvernance par rapport à un référentiel (ISO 27001, ANSSI, NIS2...). Il identifie les écarts et les risques sans nécessairement les exploiter. Le pentest (test d\'intrusion), lui, va plus loin : il simule une attaque réelle pour valider concrètement si vos vulnérabilités sont exploitables. En pratique, un audit de sécurité complet chez Atlas RedConsult inclut toujours une composante de tests techniques pour valider les findings — car identifier une faille théorique sans vérifier son exploitabilité réelle n\'a que peu de valeur.',
+      'L\'audit de sécurité informatique est une évaluation globale de votre posture de sécurité : il examine vos configurations, vos politiques, vos processus et votre gouvernance par rapport à un référentiel (ISO 27001, ANSSI, NIS2...). Il identifie les écarts et les risques sans nécessairement les exploiter. Le pentest (test d\'intrusion), lui, va plus loin : il simule une attaque réelle pour valider concrètement si vos vulnérabilités sont exploitables. En pratique, un audit de sécurité complet chez Atlas RedConsult inclut toujours une composante de tests techniques pour valider les findings, car identifier une faille théorique sans vérifier son exploitabilité réelle n\'a que peu de valeur.',
   },
   {
     question: 'Combien de temps dure un audit de sécurité informatique ?',
@@ -277,10 +277,10 @@ export default function AuditSecuriteInformatiqueePage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-600 bg-red-600/10 border border-red-600/20 rounded-full px-4 py-2 mb-6">
               <Shield className="w-3 h-3" />
-              Audit cybersécurité — Paris 75008
+              Audit cybersécurité : Paris 75008
             </div>
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Audit de Sécurité Informatique —{' '}
+              Audit de Sécurité Informatique : {' '}
               <span className="text-red-600">Diagnostic Complet</span> de vos Systèmes et Réseaux
             </h1>
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl leading-relaxed mb-10">
@@ -559,7 +559,7 @@ export default function AuditSecuriteInformatiqueePage() {
               <Link href="/contact" className="text-red-600 hover:underline">
                 Contactez-nous
               </Link>{' '}
-              — nous adaptons chaque mission à votre contexte.
+, nous adaptons chaque mission à votre contexte.
             </p>
           </div>
         </div>
@@ -653,7 +653,7 @@ export default function AuditSecuriteInformatiqueePage() {
             Prêt à connaître votre niveau de sécurité réel ?
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            La plupart des entreprises surestiment leur niveau de sécurité. Nos audits révèlent systématiquement des vulnérabilités non identifiées par les équipes internes. Obtenez un devis gratuit et personnalisé sous 48h — sans engagement.
+            La plupart des entreprises surestiment leur niveau de sécurité. Nos audits révèlent systématiquement des vulnérabilités non identifiées par les équipes internes. Obtenez un devis gratuit et personnalisé sous 48h, sans engagement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link

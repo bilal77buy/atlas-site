@@ -341,7 +341,7 @@ function Result({
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
                     <p className="text-white text-sm font-semibold mb-1">
-                      Q{q.id} — {q.title}
+                      Q{q.id}, {q.title}
                     </p>
                     <p className="text-gray-400 text-sm">{opt ? opt.label : 'Non répondu'}</p>
                   </div>
@@ -406,7 +406,7 @@ function Result({
         <h3 className="text-2xl font-bold text-white text-center mb-3">Parlons de vos résultats</h3>
         <p className="text-gray-400 text-center max-w-lg mx-auto mb-8 leading-relaxed">
           En 30 minutes, nos experts analysent vos réponses avec vous et vous proposent un plan
-          d&apos;action concret — sans engagement.
+          d&apos;action concret : sans engagement.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto mb-5">
           <a
@@ -553,9 +553,9 @@ function ResultForm({ answers, score }: { answers: (number | null)[]; score: num
             <label className="block text-sm text-gray-400 mb-1.5">Taille entreprise *</label>
             <select name="company_size" value={form.company_size} onChange={onChange} required className={`${inputClass} appearance-none`}>
               <option value="" disabled>Sélectionnez</option>
-              <option value="1-10">1 - 10 salariés</option>
-              <option value="11-50">11 - 50 salariés</option>
-              <option value="51-200">51 - 200 salariés</option>
+              <option value="1-10">1 à 10 salariés</option>
+              <option value="11-50">11 à 50 salariés</option>
+              <option value="51-200">51 à 200 salariés</option>
               <option value="200+">200+ salariés</option>
             </select>
           </div>

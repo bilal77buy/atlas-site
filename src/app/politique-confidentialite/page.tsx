@@ -21,7 +21,7 @@ export default function PolitiqueConfidentialitePage() {
         </nav>
 
         <h1 className="text-4xl font-bold mb-4">Politique de Confidentialité</h1>
-        <p className="text-gray-400 mb-12">Dernière mise à jour : juin 2024 — Conforme au Règlement Général sur la Protection des Données (RGPD)</p>
+        <p className="text-gray-400 mb-12">Dernière mise à jour : juin 2024 : Conforme au Règlement Général sur la Protection des Données (RGPD)</p>
 
         <div className="space-y-10 text-gray-300">
           <section>
@@ -123,7 +123,7 @@ export default function PolitiqueConfidentialitePage() {
           <div className="bg-[#1A1A1A] border border-gray-700 rounded-xl p-6">
             <p className="text-gray-400 text-sm">Pour toute question relative à cette politique ou pour exercer vos droits :</p>
             <p className="text-white mt-2">contact.atlascyber@gmail.com</p>
-            <p className="text-gray-400 text-sm mt-2">Atlas RedConsult — 60 rue François 1er, 75008 Paris</p>
+            <p className="text-gray-400 text-sm mt-2">Atlas RedConsult : 60 rue François 1er, 75008 Paris</p>
           </div>
 
           <p className="text-gray-500 text-sm">Cette politique peut être mise à jour périodiquement. Nous vous invitons à la consulter régulièrement.</p>

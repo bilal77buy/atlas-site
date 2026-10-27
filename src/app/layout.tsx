@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: '%s | Atlas Red Consult',
   },
   description:
-    'Atlas RedConsult — Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise, boîte blanche, Red Team. Conformité NIS2, DORA, PCI-DSS, ISO 27001 & RGPD. Devis gratuit sous 48h.',
+    'Atlas RedConsult : Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise, boîte blanche, Red Team. Conformité NIS2, DORA, PCI-DSS, ISO 27001 & RGPD. Devis gratuit sous 48h.',
   keywords: [
     'pentest entreprise',
     'cabinet pentest',
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
     siteName: 'Atlas Red Consult',
     title: 'Atlas Red Consult | Cabinet de Pentest Offensif B2B',
     description:
-      'Atlas RedConsult — Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise et boîte blanche. Audit sécurité, Red Team, conformité DORA & NIS2.',
+      'Atlas RedConsult : Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise et boîte blanche. Audit sécurité, Red Team, conformité DORA & NIS2.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Atlas Red Consult - Cabinet de Pentest Offensif',
+        alt: 'Atlas Red Consult | Cabinet de Pentest Offensif',
       },
     ],
   },

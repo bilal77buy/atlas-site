@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Conformité DORA — Tests Intrusion Réglementaires TLPT | Atlas RedConsult',
+  title: 'Conformité DORA | Tests Intrusion Réglementaires TLPT | Atlas RedConsult',
   description:
     'Conformité DORA pour entités financières : TLPT (Threat-Led Penetration Testing), tests d\'intrusion réglementaires. Cabinet certifié Paris. Devis 48h.',
   alternates: {
@@ -18,7 +18,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://atlasredconsult.com/conformite-dora#service',
-      name: 'Conformité DORA — Tests d\'Intrusion TLPT',
+      name: 'Conformité DORA | Tests d\'Intrusion TLPT',
       description:
         'Accompagnement des entités financières dans leur conformité au règlement DORA : TLPT, tests d\'intrusion réglementaires, rapports auditables.',
       provider: {
@@ -99,10 +99,10 @@ export default function ConformiteDoraPage() {
             <span className="text-gray-300">Conformité DORA</span>
           </nav>
           <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">
-            Règlement DORA — Entités Financières
+            Règlement DORA : Entités Financières
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            Conformité DORA — Tests d'Intrusion TLPT pour Entités Financières
+            Conformité DORA : Tests d'Intrusion TLPT pour Entités Financières
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
             Le règlement DORA entre pleinement en vigueur. Votre organisation financière est-elle prête à démontrer sa résilience opérationnelle numérique aux régulateurs ? Atlas RedConsult vous accompagne dans la mise en conformité avec des tests d'intrusion réglementaires et des exercices TLPT rigoureux.
@@ -133,10 +133,10 @@ export default function ConformiteDoraPage() {
                 DORA répond à un constat alarmant : la transformation numérique accélérée du secteur financier a créé des dépendances critiques vis-à-vis des systèmes d'information et des prestataires tiers. Une cyberattaque sur une infrastructure financière majeure peut provoquer des effets systémiques en cascade. Le règlement impose donc une approche globale et harmonisée de la gestion des risques informatiques.
               </p>
               <p>
-                Le règlement s'articule autour de cinq piliers fondamentaux : la gestion des risques ICT (Technologies de l'Information et de la Communication), la gestion et la notification des incidents, les tests de résilience opérationnelle numérique — dont les TLPT —, la gestion des risques liés aux tiers prestataires ICT, et le partage d'informations sur les cybermenaces. Chacun de ces piliers impose des obligations concrètes, mesurables et sanctionnables.
+                Le règlement s'articule autour de cinq piliers fondamentaux : la gestion des risques ICT (Technologies de l'Information et de la Communication), la gestion et la notification des incidents, les tests de résilience opérationnelle numérique, dont les TLPT, la gestion des risques liés aux tiers prestataires ICT, et le partage d'informations sur les cybermenaces. Chacun de ces piliers impose des obligations concrètes, mesurables et sanctionnables.
               </p>
               <p>
-                Pour les équipes sécurité des établissements financiers, DORA représente à la fois une contrainte réglementaire et une opportunité de structurer leur programme de cybersécurité selon les meilleures pratiques internationales. Les autorités compétentes — BCE, ACPR, AMF selon les entités — disposent de pouvoirs de contrôle renforcés et peuvent exiger des démonstrations concrètes de conformité.
+                Pour les équipes sécurité des établissements financiers, DORA représente à la fois une contrainte réglementaire et une opportunité de structurer leur programme de cybersécurité selon les meilleures pratiques internationales. Les autorités compétentes, BCE, ACPR, AMF selon les entités, disposent de pouvoirs de contrôle renforcés et peuvent exiger des démonstrations concrètes de conformité.
               </p>
             </div>
           </section>
@@ -154,7 +154,7 @@ export default function ConformiteDoraPage() {
                 Le premier niveau concerne toutes les entités financières soumises à DORA, à l'exception des microentreprises. Ces dernières doivent mettre en place un programme complet de tests intégrant des évaluations de vulnérabilité, des analyses de l'exposition au risque, des tests sur les composants réseau, des revues de code source, des tests fondés sur des scénarios, des tests de compatibilité, des tests de performance, et des tests de bout en bout. Ces tests doivent être réalisés au minimum une fois par an.
               </p>
               <p>
-                Le second niveau — le plus exigeant — concerne les entités financières significatives désignées par les autorités compétentes. Ces entités sont tenues de réaliser des TLPT (Threat-Led Penetration Testing) au moins tous les trois ans. Les résultats de ces tests, y compris les vulnérabilités identifiées et les plans de remédiation, doivent être communiqués aux autorités compétentes. La désignation des entités soumises aux TLPT est fondée sur des critères de taille, de profil de risque systémique et d'interconnexion avec d'autres acteurs du marché.
+                Le second niveau : le plus exigeant, concerne les entités financières significatives désignées par les autorités compétentes. Ces entités sont tenues de réaliser des TLPT (Threat-Led Penetration Testing) au moins tous les trois ans. Les résultats de ces tests, y compris les vulnérabilités identifiées et les plans de remédiation, doivent être communiqués aux autorités compétentes. La désignation des entités soumises aux TLPT est fondée sur des critères de taille, de profil de risque systémique et d'interconnexion avec d'autres acteurs du marché.
               </p>
               <p>
                 Un aspect crucial souvent négligé : DORA impose également de tester les prestataires ICT tiers critiques. Les entités financières doivent s'assurer que leurs fournisseurs de services cloud, leurs hébergeurs et leurs éditeurs de logiciels critiques sont eux-mêmes soumis à des tests de sécurité adéquats. Cette extension du périmètre de test représente un défi organisationnel et contractuel majeur.
@@ -169,7 +169,7 @@ export default function ConformiteDoraPage() {
             </h2>
             <div className="text-gray-300 space-y-4 leading-relaxed">
               <p>
-                Le TLPT est une forme avancée de test d'intrusion qui se distingue fondamentalement des pentests conventionnels par son ancrage dans le renseignement sur les menaces réelles. Là où un pentest traditionnel cherche à identifier des vulnérabilités techniques, le TLPT simule des attaques sophistiquées menées par des acteurs malveillants réels — groupes APT, cybercriminels organisés — qui ciblent spécifiquement le secteur financier européen.
+                Le TLPT est une forme avancée de test d'intrusion qui se distingue fondamentalement des pentests conventionnels par son ancrage dans le renseignement sur les menaces réelles. Là où un pentest traditionnel cherche à identifier des vulnérabilités techniques, le TLPT simule des attaques sophistiquées menées par des acteurs malveillants réels, groupes APT, cybercriminels organisés, qui ciblent spécifiquement le secteur financier européen.
               </p>
               <p>
                 La méthodologie TLPT s'inspire du cadre TIBER-EU (Threat Intelligence-Based Ethical Red Teaming), développé par la Banque centrale européenne. Elle se déroule en trois phases distinctes : une phase de préparation qui définit le périmètre et les règles d'engagement, une phase de renseignement sur les menaces (Threat Intelligence) qui identifie les TTPs pertinents, et une phase d'exécution de Red Team qui reproduit ces TTPs contre les systèmes de production réels.
@@ -211,7 +211,7 @@ export default function ConformiteDoraPage() {
                 {/* <div id="spondei-form" data-form-id="REPLACE_ID">Chargement...</div> */}
                 {/* <script src="https://app.spondei.com/embed.js" async></script> */}
               </p>
-              <p className="text-gray-500 text-sm text-center">Formulaire de contact — disponible prochainement</p>
+              <p className="text-gray-500 text-sm text-center">Formulaire de contact : disponible prochainement</p>
             </div>
           </section>
 
@@ -228,7 +228,7 @@ export default function ConformiteDoraPage() {
                 Pour les tests de résilience du niveau 1 (toutes entités hors microentreprises), la fréquence minimale est annuelle. Il est recommandé d'intégrer ces tests dans le cycle de gestion des risques ICT et de les planifier en début d'exercice fiscal pour faciliter la gouvernance et le reporting.
               </p>
               <p>
-                Pour les TLPT du niveau 2, le cycle triennal impose une planification rigoureuse. La durée totale d'un exercice TLPT complet — de la phase de cadrage à la remise du rapport final — s'étend généralement sur trois à six mois. Il est donc impératif d'engager le processus suffisamment en amont de la date limite réglementaire pour éviter tout dépassement.
+                Pour les TLPT du niveau 2, le cycle triennal impose une planification rigoureuse. La durée totale d'un exercice TLPT complet : de la phase de cadrage à la remise du rapport final, s'étend généralement sur trois à six mois. Il est donc impératif d'engager le processus suffisamment en amont de la date limite réglementaire pour éviter tout dépassement.
               </p>
               <p>
                 Les autorités compétentes peuvent également exiger des tests supplémentaires en dehors du cycle normal, notamment suite à un incident de sécurité majeur, à une modification significative de l'infrastructure ICT, à une fusion-acquisition, ou à l'émergence de nouvelles menaces ciblant spécifiquement le secteur financier.
@@ -240,8 +240,8 @@ export default function ConformiteDoraPage() {
           <section className="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800">
             <h3 className="text-lg font-semibold text-white mb-4">Services associés</h3>
             <ul className="space-y-2">
-              <li><Link href="/pentest-fintech" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Fintech — Tests d'intrusion pour startups et scale-ups financières</Link></li>
-              <li><Link href="/audit-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Audit NIS2 — Tests de sécurité pour la directive cybersécurité</Link></li>
+              <li><Link href="/pentest-fintech" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Fintech : Tests d'intrusion pour startups et scale-ups financières</Link></li>
+              <li><Link href="/audit-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Audit NIS2 : Tests de sécurité pour la directive cybersécurité</Link></li>
               <li><Link href="/blog/dora-tests-tlpt-fintechs" className="text-red-600 hover:text-red-400 transition-colors">→ Blog : DORA et les tests TLPT pour les fintechs</Link></li>
             </ul>
           </section>

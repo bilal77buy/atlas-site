@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Audit NIS2 — Tests Intrusion Directive Cybersécurité | Atlas RedConsult',
+  title: 'Audit NIS2 | Tests Intrusion Directive Cybersécurité | Atlas RedConsult',
   description:
     'Audit NIS2 : tests d\'intrusion pour conformité directive NIS2. Entités essentielles et importantes. Cabinet Paris certifié. Devis gratuit sous 48h.',
   alternates: {
@@ -18,7 +18,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://atlasredconsult.com/audit-nis2#service',
-      name: 'Audit NIS2 — Tests de Sécurité pour la Conformité Directive NIS2',
+      name: 'Audit NIS2 | Tests de Sécurité pour la Conformité Directive NIS2',
       description:
         'Audit et tests d\'intrusion pour la mise en conformité des entités essentielles et importantes avec la directive NIS2 transposée en droit français.',
       provider: {
@@ -91,10 +91,10 @@ export default function AuditNis2Page() {
             <span className="text-gray-300">Audit NIS2</span>
           </nav>
           <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">
-            Directive NIS2 — Entités Essentielles & Importantes
+            Directive NIS2 : Entités Essentielles & Importantes
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            Audit NIS2 — Tests de Sécurité pour la Conformité à la Directive NIS2
+            Audit NIS2 : Tests de Sécurité pour la Conformité à la Directive NIS2
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
             La directive NIS2 est transposée en droit français. Les entités essentielles et importantes ont des obligations de sécurité contraignantes et sanctionnables. Votre organisation peut-elle prouver qu'elle applique des mesures de sécurité techniques à la hauteur du risque ?
@@ -146,7 +146,7 @@ export default function AuditNis2Page() {
                 Ces mesures obligatoires couvrent : les politiques relatives à l'analyse des risques et à la sécurité des systèmes d'information, la gestion des incidents, la continuité des activités et la gestion des crises, la sécurité de la chaîne d'approvisionnement, la sécurité de l'acquisition, du développement et de la maintenance des réseaux et des systèmes, les politiques et procédures relatives à l'évaluation de l'efficacité des mesures de gestion des risques (c'est ici que les tests d'intrusion s'inscrivent directement), les pratiques de base en matière de cyberhygiène et la formation à la cybersécurité, les politiques et procédures relatives à l'utilisation de la cryptographie, la sécurité des ressources humaines, et l'utilisation de l'authentification multifacteur.
               </p>
               <p>
-                NIS2 introduit également une obligation de notification des incidents significatifs sous 24 heures pour une alerte précoce, 72 heures pour une notification initiale, et un mois pour un rapport final. Ces délais contraignants exigent une capacité de détection et de réponse aux incidents mature, que seule une évaluation rigoureuse — dont les tests d'intrusion — permet de valider.
+                NIS2 introduit également une obligation de notification des incidents significatifs sous 24 heures pour une alerte précoce, 72 heures pour une notification initiale, et un mois pour un rapport final. Ces délais contraignants exigent une capacité de détection et de réponse aux incidents mature, que seule une évaluation rigoureuse, dont les tests d'intrusion : permet de valider.
               </p>
               <p>
                 Une nouveauté majeure de NIS2 : la responsabilité personnelle des dirigeants. Les organes de direction des entités essentielles et importantes doivent approuver les mesures de gestion des risques, superviser leur mise en œuvre, et peuvent être tenus responsables en cas de violation des obligations. Cette disposition place la cybersécurité au niveau du conseil d'administration.
@@ -195,7 +195,7 @@ export default function AuditNis2Page() {
               {/* SPONDEI FORM PLACEHOLDER */}
               {/* <div id="spondei-form" data-form-id="REPLACE_ID">Chargement...</div> */}
               {/* <script src="https://app.spondei.com/embed.js" async></script> */}
-              <p className="text-gray-500 text-sm text-center">Formulaire de contact — disponible prochainement</p>
+              <p className="text-gray-500 text-sm text-center">Formulaire de contact : disponible prochainement</p>
             </div>
           </section>
 
@@ -209,7 +209,7 @@ export default function AuditNis2Page() {
                 NIS2 introduit un régime de sanctions nettement plus sévère que NIS1. Pour les entités essentielles, les amendes administratives peuvent atteindre 10 millions d'euros ou 2 % du chiffre d'affaires annuel mondial total de l'exercice précédent, le montant le plus élevé étant retenu. Pour les entités importantes, le plafond est fixé à 7 millions d'euros ou 1,4 % du chiffre d'affaires mondial.
               </p>
               <p>
-                Ces sanctions peuvent s'appliquer pour tout manquement aux obligations de l'article 21 (mesures de gestion des risques), de l'article 23 (notification des incidents) ou des obligations d'enregistrement. L'autorité compétente — l'ANSSI pour la France — dispose également de pouvoirs d'injonction, de mise en demeure, et peut ordonner la suspension temporaire de certaines activités dans les cas les plus graves.
+                Ces sanctions peuvent s'appliquer pour tout manquement aux obligations de l'article 21 (mesures de gestion des risques), de l'article 23 (notification des incidents) ou des obligations d'enregistrement. L'autorité compétente : l'ANSSI pour la France : dispose également de pouvoirs d'injonction, de mise en demeure, et peut ordonner la suspension temporaire de certaines activités dans les cas les plus graves.
               </p>
               <p>
                 La nouveauté la plus impactante pour les dirigeants : NIS2 permet aux États membres de prévoir la responsabilité personnelle des personnes physiques exerçant des fonctions de direction au sein d'une entité essentielle ou importante. En cas de violation grave et répétée des obligations, les dirigeants peuvent être tenus personnellement responsables et interdits temporairement d'exercer des fonctions de direction dans le secteur.
@@ -224,9 +224,9 @@ export default function AuditNis2Page() {
           <section className="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800">
             <h3 className="text-lg font-semibold text-white mb-4">Services et ressources associés</h3>
             <ul className="space-y-2">
-              <li><Link href="/conformite-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité NIS2 — Guide complet de mise en conformité</Link></li>
-              <li><Link href="/conformite-dora" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité DORA — Tests d'intrusion pour entités financières</Link></li>
-              <li><Link href="/blog/nis2-obligations-entreprises" className="text-red-600 hover:text-red-400 transition-colors">→ Blog : NIS2 — obligations concrètes pour les entreprises</Link></li>
+              <li><Link href="/conformite-nis2" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité NIS2 : Guide complet de mise en conformité</Link></li>
+              <li><Link href="/conformite-dora" className="text-red-600 hover:text-red-400 transition-colors">→ Conformité DORA : Tests d'intrusion pour entités financières</Link></li>
+              <li><Link href="/blog/nis2-obligations-entreprises" className="text-red-600 hover:text-red-400 transition-colors">→ Blog : NIS2 : obligations concrètes pour les entreprises</Link></li>
             </ul>
           </section>
 

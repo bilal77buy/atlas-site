@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Quiz from '@/components/quiz/Quiz'
 
 export const metadata: Metadata = {
-  title: 'Diagnostic de maturité cyber gratuit — 10 questions',
+  title: 'Diagnostic de maturité cyber gratuit | 10 questions',
   description:
     'Évaluez la maturité cybersécurité de votre entreprise en 3 minutes : 10 questions, score immédiat et recommandations personnalisées par Atlas RedConsult.',
   alternates: { canonical: 'https://atlasredconsult.com/quiz' },

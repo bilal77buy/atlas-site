@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/ui/Breadcrumb'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Cabinet Atlas RedConsult — Experts Pentest Paris | Atlas RedConsult',
+  title: 'Cabinet Atlas RedConsult | Experts Pentest Paris | Atlas RedConsult',
   description:
     'Atlas RedConsult : cabinet de pentest offensif fondé par des experts sécurité. Hall of Fame Google, Microsoft, Meta, US DoD. Paris 75008. En savoir plus.',
   alternates: { canonical: 'https://atlasredconsult.com/a-propos' },
@@ -16,7 +16,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'À propos — Atlas RedConsult',
+    name: 'À propos | Atlas RedConsult',
     url: 'https://atlasredconsult.com/a-propos',
     description:
       'Cabinet de pentest offensif B2B fondé par des experts en sécurité offensive. Hall of Fame Google, Microsoft, Meta et US DoD.',
@@ -108,7 +108,7 @@ export default function AProposPage() {
               Contrairement aux audits de conformité purement documentaires, nous adoptons
               une posture d&apos;attaquant réel. Nos tests d&apos;intrusion reproduisent les
               tactiques, techniques et procédures (TTP) des groupes APT et des acteurs
-              malveillants ciblant les entreprises B2B — en particulier les fintechs, éditeurs
+              malveillants ciblant les entreprises B2B : en particulier les fintechs, éditeurs
               SaaS et prestataires de services critiques.
             </p>
             <p className="text-gray-300 text-base leading-relaxed">
@@ -201,7 +201,7 @@ export default function AProposPage() {
             Travaillons ensemble
           </h2>
           <p className="text-gray-300 text-base max-w-lg mx-auto mb-8">
-            Votre prochaine mission de pentest commence par une conversation. Obtenez un devis personnalisé sous 48h — sans engagement.
+            Votre prochaine mission de pentest commence par une conversation. Obtenez un devis personnalisé sous 48h, sans engagement.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

@@ -28,12 +28,12 @@ const blogArticles = [
   ['Blog', '/blog'],
   ['Vulnérabilité IDOR expliquée', '/blog/vulnerabilite-idor-expliquee'],
   ['Pentest Black/Grey/White Box', '/blog/pentest-blackbox-vs-greybox-vs-whitebox'],
-  ['BOLA & BFLA — Sécurité API', '/blog/bola-bfla-securite-api'],
-  ['SSRF — Server-Side Request Forgery', '/blog/ssrf-server-side-request-forgery'],
-  ['OAuth — Vulnérabilités & Pentest', '/blog/oauth-vulnerabilites-pentest'],
+  ['BOLA & BFLA : Sécurité API', '/blog/bola-bfla-securite-api'],
+  ['SSRF : Server-Side Request Forgery', '/blog/ssrf-server-side-request-forgery'],
+  ['OAuth : Vulnérabilités & Pentest', '/blog/oauth-vulnerabilites-pentest'],
   ['Méthodologie Pentest OWASP', '/blog/methodologie-pentest-owasp'],
-  ['DORA — Tests TLPT Fintechs', '/blog/dora-tests-tlpt-fintechs'],
-  ['NIS2 — Obligations entreprises', '/blog/nis2-obligations-entreprises'],
+  ['DORA : Tests TLPT Fintechs', '/blog/dora-tests-tlpt-fintechs'],
+  ['NIS2 : Obligations entreprises', '/blog/nis2-obligations-entreprises'],
   ['PCI DSS v4 E-commerce', '/blog/pci-dss-v4-ecommerce'],
   ['Comment lire un rapport pentest', '/blog/rapport-pentest-comment-lire'],
   ['Hall of Fame Google/Microsoft/Meta', '/blog/hall-of-fame-google-microsoft-meta'],
@@ -125,7 +125,7 @@ export default function Footer() {
 
         <div className="border-t border-[#2A2A2A] mt-10 pt-6">
           <p className="text-[#9CA3AF] text-xs text-center">
-            © 2025 Atlas RedConsult — Cabinet de Pentest Paris 75008 | 60 rue François 1er
+            © 2025 Atlas RedConsult : Cabinet de Pentest Paris 75008 | 60 rue François 1er
           </p>
         </div>
       </div>

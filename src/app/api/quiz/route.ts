@@ -43,14 +43,14 @@ export async function POST(request: NextRequest) {
         from: 'Atlas RedConsult <onboarding@resend.dev>',
         to: CONTACT_EMAIL,
         replyTo: email,
-        subject: `Nouveau lead quiz — ${esc(company)} (${Number(score) || 0}/28, ${esc(level)})`,
+        subject: `Nouveau lead quiz : ${esc(company)} (${Number(score) || 0}/28, ${esc(level)})`,
         html: `
-          <h2>Nouveau lead — Diagnostic maturité cyber</h2>
+          <h2>Nouveau lead : Diagnostic maturité cyber</h2>
           <p><strong>Nom :</strong> ${esc(name)}</p>
           <p><strong>Entreprise :</strong> ${esc(company)} (${esc(company_size)} salariés)</p>
           <p><strong>Email :</strong> ${esc(email)}</p>
           <p><strong>Téléphone :</strong> ${esc(phone) || 'Non renseigné'}</p>
-          <p><strong>Score :</strong> ${Number(score) || 0} / 28 — ${esc(level)}</p>
+          <p><strong>Score :</strong> ${Number(score) || 0} / 28, ${esc(level)}</p>
           <table border="1" cellspacing="0" style="border-collapse:collapse;font-size:13px">
             <tr><th>Question</th><th>Réponse</th><th>Pts</th></tr>
             ${rows}

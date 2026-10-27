@@ -6,7 +6,7 @@ import SpondeiForm from '@/components/ui/SpondeiForm'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Devis Pentest Gratuit — Réponse 48h | Atlas RedConsult',
+  title: 'Devis Pentest Gratuit | Réponse 48h | Atlas RedConsult',
   description:
     'Demandez votre devis pentest gratuit. Réponse sous 48h. Cabinet Atlas RedConsult Paris 75008, 60 rue François 1er. Tests d\'intrusion experts certifiés.',
   alternates: { canonical: 'https://atlasredconsult.com/contact' },
@@ -63,7 +63,7 @@ export default function ContactPage() {
         <div className="section-container relative">
           <Breadcrumb items={[{ label: 'Contact', href: '/contact' }]} />
           <h1 className="font-display text-4xl md:text-5xl font-bold text-white max-w-3xl leading-tight mb-4">
-            Demander un Devis Pentest —{' '}
+            Demander un Devis Pentest : {' '}
             <span className="text-red-600">Réponse sous 48h</span>
           </h1>
           <p className="text-gray-400 text-lg max-w-xl">

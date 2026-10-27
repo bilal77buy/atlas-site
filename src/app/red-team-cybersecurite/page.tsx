@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Red Team Cybersécurité — Simulation Attaque Avancée | Atlas RedConsult',
+  title: 'Red Team Cybersécurité | Simulation Attaque Avancée | Atlas RedConsult',
   description:
     "Red Team cybersécurité : simulation d'attaque APT complète. Tests d'intrusion avancés, phishing, mouvement latéral. Experts Paris. Devis gratuit.",
   alternates: { canonical: 'https://atlasredconsult.com/red-team-cybersecurite' },
@@ -61,7 +61,7 @@ export default function RedTeamCybersecurite() {
         name: 'Qui doit être au courant d\'une opération Red Team dans l\'entreprise ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Dans une opération Red Team standard, seul un "Trusted Agent" — généralement le RSSI, le DSI ou un membre de la direction générale — est informé de la mission. Le reste des équipes (SOC, équipe sécurité, équipe IT) ne doit pas être prévenu afin de tester leur capacité de détection et de réponse dans des conditions réalistes. Cette approche "double aveugle" est fondamentale pour obtenir une évaluation fidèle de votre niveau de résilience réel.',
+          text: 'Dans une opération Red Team standard, seul un "Trusted Agent", généralement le RSSI, le DSI ou un membre de la direction générale, est informé de la mission. Le reste des équipes (SOC, équipe sécurité, équipe IT) ne doit pas être prévenu afin de tester leur capacité de détection et de réponse dans des conditions réalistes. Cette approche "double aveugle" est fondamentale pour obtenir une évaluation fidèle de votre niveau de résilience réel.',
         },
       },
       {
@@ -101,16 +101,16 @@ export default function RedTeamCybersecurite() {
         <section className="max-w-6xl mx-auto px-4 py-16">
           <div className="max-w-3xl">
             <span className="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded mb-4 uppercase tracking-wider">
-              Simulation d&apos;attaque avancée — MITRE ATT&amp;CK
+              Simulation d&apos;attaque avancée : MITRE ATT&amp;CK
             </span>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Red Team Cybersécurité —{' '}
+              Red Team Cybersécurité : {' '}
               <span className="text-red-600">Simulation d&apos;Attaque Avancée</span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Vos outils de sécurité détectent-ils réellement une attaque en cours, ou seulement
               les menaces dans leurs signatures ? Une opération Red Team simule une attaque APT complète
-              contre votre organisation — technique, humaine, persistance, mouvement latéral —
+              contre votre organisation : technique, humaine, persistance, mouvement latéral, 
               pour mesurer votre résilience réelle face à des adversaires déterminés.
             </p>
             <Link
@@ -132,16 +132,16 @@ export default function RedTeamCybersecurite() {
                 <p className="text-gray-300 leading-relaxed mb-4">
                   Une opération Red Team est une simulation d&apos;attaque ciblée, réaliste et complète contre
                   votre organisation. Contrairement à un pentest classique qui évalue exhaustivement un
-                  périmètre défini, le Red Team reproduit le comportement d&apos;un adversaire réel — groupe
-                  APT (Advanced Persistent Threat), cybercriminel organisé ou initié malveillant — avec
+                  périmètre défini, le Red Team reproduit le comportement d&apos;un adversaire réel, groupe
+                  APT (Advanced Persistent Threat), cybercriminel organisé ou initié malveillant, avec
                   un objectif précis défini en amont avec vous.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
                   L&apos;objectif d&apos;un Red Team n&apos;est pas de trouver toutes les vulnérabilités, mais de mesurer
                   votre capacité à détecter, contenir et répondre à une attaque sophistiquée. La question
                   posée n&apos;est plus "quelles sont nos vulnérabilités ?" mais "un attaquant réel peut-il
-                  atteindre notre objectif critique — accès à la base de données clients, exfiltration
-                  de propriété intellectuelle, compromission du système de paiement — et combien de
+                  atteindre notre objectif critique : accès à la base de données clients, exfiltration
+                  de propriété intellectuelle, compromission du système de paiement, et combien de
                   temps nous faudrait-il pour le détecter ?"
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
@@ -149,11 +149,11 @@ export default function RedTeamCybersecurite() {
                   Le volet technique couvre la reconnaissance externe, l&apos;exploitation de vulnérabilités,
                   l&apos;établissement d&apos;un accès persistant et le mouvement latéral vers les systèmes critiques.
                   Le volet humain inclut des campagnes de phishing ciblé, de spear phishing, et potentiellement
-                  des tentatives d&apos;ingénierie sociale par téléphone (vishing). Le volet physique — si inclus
-                  dans le périmètre — peut couvrir des tentatives d&apos;intrusion dans vos locaux.
+                  des tentatives d&apos;ingénierie sociale par téléphone (vishing). Le volet physique, si inclus
+                  dans le périmètre : peut couvrir des tentatives d&apos;intrusion dans vos locaux.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Seul un nombre limité de personnes dans votre organisation est informé de la mission —
+                  Seul un nombre limité de personnes dans votre organisation est informé de la mission, 
                   généralement votre RSSI et un membre de la direction. Votre équipe sécurité et votre SOC
                   ne savent pas que le test est en cours, ce qui garantit l&apos;authenticité de leur réponse
                   et une mesure fidèle de votre niveau de détection réel.
@@ -325,7 +325,7 @@ export default function RedTeamCybersecurite() {
                 <p className="text-gray-300 leading-relaxed">
                   Nos rapports Red Team répondent aux exigences du règlement DORA (Digital Operational
                   Resilience Act) qui impose aux entités financières des tests de résilience avancés
-                  (TLPT — Threat-Led Penetration Testing). Consultez notre page{' '}
+                  (TLPT : Threat-Led Penetration Testing). Consultez notre page{' '}
                   <Link href="/conformite-dora" className="text-red-600 hover:underline">conformité DORA</Link>{' '}
                   pour en savoir plus.
                 </p>
@@ -342,7 +342,7 @@ export default function RedTeamCybersecurite() {
                     },
                     {
                       q: 'Qui doit être au courant d\'une opération Red Team dans l\'entreprise ?',
-                      a: 'Dans une opération Red Team standard, seul un "Trusted Agent" — généralement le RSSI ou un membre de la direction — est informé de la mission. Le reste des équipes (SOC, équipe sécurité, IT) ne doit pas être prévenu afin de tester leur capacité de détection dans des conditions réalistes.',
+                      a: 'Dans une opération Red Team standard, seul un "Trusted Agent", généralement le RSSI ou un membre de la direction, est informé de la mission. Le reste des équipes (SOC, équipe sécurité, IT) ne doit pas être prévenu afin de tester leur capacité de détection dans des conditions réalistes.',
                     },
                     {
                       q: 'Mon entreprise est-elle prête pour une opération Red Team ?',

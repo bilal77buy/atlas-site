@@ -19,12 +19,12 @@ import {
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
+  title: 'Cabinet Pentest Paris | Tests d\'Intrusion Experts | Atlas RedConsult',
   description:
-    'Atlas RedConsult — Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise, boîte blanche, Red Team. Conformité NIS2, DORA, PCI-DSS, ISO 27001 & RGPD. Devis gratuit sous 48h.',
+    'Atlas RedConsult : Cabinet de pentest offensif à Paris. Tests d\'intrusion boîte noire, boîte grise, boîte blanche, Red Team. Conformité NIS2, DORA, PCI-DSS, ISO 27001 & RGPD. Devis gratuit sous 48h.',
   alternates: { canonical: 'https://atlasredconsult.com' },
   openGraph: {
-    title: 'Cabinet Pentest Paris — Tests d\'Intrusion Experts | Atlas RedConsult',
+    title: 'Cabinet Pentest Paris | Tests d\'Intrusion Experts | Atlas RedConsult',
     description:
       'Cabinet de pentest offensif à Paris. Tests d\'intrusion manuels pour fintechs et SaaS B2B. Devis gratuit sous 48h.',
     url: 'https://atlasredconsult.com',
@@ -237,10 +237,10 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-red-600 bg-red-600/10 border border-red-600/20 rounded-full px-4 py-2 mb-6">
               <Shield className="w-3 h-3" />
-              Cabinet de pentest offensif B2B — Paris 75008
+              Cabinet de pentest offensif B2B : Paris 75008
             </div>
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-              Cabinet de Pentest Offensif —{' '}
+              Cabinet de Pentest Offensif : {' '}
               <span className="text-red-600">Tests d&apos;Intrusion Experts</span>{' '}
               pour Fintechs et SaaS B2B
             </h1>
@@ -287,14 +287,14 @@ export default function HomePage() {
               Pourquoi choisir Atlas RedConsult pour votre pentest ?
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
-              Dans un environnement réglementaire de plus en plus exigeant — DORA, NIS2, PCI-DSS — et face à une menace cyber en constante évolution, les entreprises françaises ne peuvent plus se contenter d&apos;une sécurité déclarative. Elles ont besoin de preuves concrètes que leurs défenses résistent à une attaque réelle.
+              Dans un environnement réglementaire de plus en plus exigeant, DORA, NIS2, PCI-DSS, et face à une menace cyber en constante évolution, les entreprises françaises ne peuvent plus se contenter d&apos;une sécurité déclarative. Elles ont besoin de preuves concrètes que leurs défenses résistent à une attaque réelle.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
                 title: 'Expertise offensive reconnue',
-                body: 'Nos consultants ont découvert des vulnérabilités dans les systèmes de Google, Microsoft, Meta et le Département de la Défense américain. Cette expérience de terrain — acquise sur les programmes de bug bounty les plus exigeants au monde — est directement au service de votre sécurité.',
+                body: 'Nos consultants ont découvert des vulnérabilités dans les systèmes de Google, Microsoft, Meta et le Département de la Défense américain. Cette expérience de terrain, acquise sur les programmes de bug bounty les plus exigeants au monde, est directement au service de votre sécurité.',
               },
               {
                 title: 'Tests manuels, pas de faux positifs',
@@ -387,7 +387,7 @@ export default function HomePage() {
               Preuve d&apos;expertise terrain
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Hall of Fame — Failles découvertes chez Google, Microsoft, Meta et US DoD
+              Hall of Fame : Failles découvertes chez Google, Microsoft, Meta et US DoD
             </h2>
             <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed">
               Nos consultants ont participé aux programmes de bug bounty des plus grandes organisations mondiales. Ces reconnaissances officielles attestent d&apos;une expertise offensive de premier niveau, directement applicable à la protection de votre entreprise.
@@ -482,7 +482,7 @@ export default function HomePage() {
               Nos tarifs pentest transparents
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Chez Atlas RedConsult, la transparence tarifaire est un engagement. Votre devis détaille précisément le nombre de jours, les livrables attendus et les conditions d&apos;intervention — sans surprise.
+              Chez Atlas RedConsult, la transparence tarifaire est un engagement. Votre devis détaille précisément le nombre de jours, les livrables attendus et les conditions d&apos;intervention, sans surprise.
             </p>
           </div>
           <div className="bg-[#1A1A1A] border border-white/5 rounded-xl p-8 text-center mb-12">
@@ -554,7 +554,7 @@ export default function HomePage() {
             Vos systèmes sont-ils réellement sécurisés ?
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            La plupart de nos clients découvrent leurs vulnérabilités critiques dans les premières 48h de mission. Ne laissez pas un attaquant être le premier à les trouver. Demandez votre devis gratuit aujourd&apos;hui — notre équipe vous répond sous 48h.
+            La plupart de nos clients découvrent leurs vulnérabilités critiques dans les premières 48h de mission. Ne laissez pas un attaquant être le premier à les trouver. Demandez votre devis gratuit aujourd&apos;hui, notre équipe vous répond sous 48h.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

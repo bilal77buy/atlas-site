@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Audit PCI-DSS — Pentest Paiement Carte Bancaire | Atlas RedConsult',
+  title: 'Audit PCI-DSS | Pentest Paiement Carte Bancaire | Atlas RedConsult',
   description:
     'Audit PCI-DSS v4.0 : tests d\'intrusion obligatoires pour commerçants et PSP. Exigence 11.4. Cabinet Paris certifié. Devis pentest PCI-DSS 48h.',
   alternates: {
@@ -18,7 +18,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://atlasredconsult.com/audit-pci-dss#service',
-      name: 'Audit PCI-DSS — Tests d\'Intrusion Obligatoires Conformité Paiement',
+      name: 'Audit PCI-DSS | Tests d\'Intrusion Obligatoires Conformité Paiement',
       description:
         'Audit PCI-DSS v4.0 avec tests d\'intrusion obligatoires (exigence 11.4) pour commerçants, PSP et prestataires de services de paiement.',
       provider: {
@@ -91,10 +91,10 @@ export default function AuditPciDssPage() {
             <span className="text-gray-300">Audit PCI-DSS</span>
           </nav>
           <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">
-            PCI-DSS v4.0 — Exigence 11.4
+            PCI-DSS v4.0 : Exigence 11.4
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            Audit PCI-DSS — Tests d'Intrusion Obligatoires pour la Conformité Paiement
+            Audit PCI-DSS : Tests d'Intrusion Obligatoires pour la Conformité Paiement
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
             Votre activité touche aux données de cartes bancaires. PCI-DSS v4.0 impose des tests d'intrusion annuels sur l'ensemble de votre environnement de données de titulaires de carte. Une non-conformité expose votre organisation à des amendes, à la résiliation des contrats d'acceptation carte, et à une responsabilité accrue en cas de violation.
@@ -140,7 +140,7 @@ export default function AuditPciDssPage() {
             </h2>
             <div className="text-gray-300 space-y-4 leading-relaxed">
               <p>
-                L'exigence 11.4 de PCI-DSS v4.0 est l'une des plus prescriptives du standard en matière de tests de sécurité. Elle impose des tests d'intrusion complets sur l'environnement de données du titulaire de carte (CDE — Cardholder Data Environment) et les systèmes qui interagissent avec lui.
+                L'exigence 11.4 de PCI-DSS v4.0 est l'une des plus prescriptives du standard en matière de tests de sécurité. Elle impose des tests d'intrusion complets sur l'environnement de données du titulaire de carte (CDE, Cardholder Data Environment) et les systèmes qui interagissent avec lui.
               </p>
               <p>
                 L'exigence 11.4.1 définit la méthodologie que doit respecter le programme de tests d'intrusion : une approche acceptable dans le secteur (PTES, OWASP, NIST SP 800-115 ou équivalent), une couverture du périmètre complet du CDE et des systèmes connexes, des tests depuis l'extérieur du réseau et depuis l'intérieur des différents segments, des tests de la segmentation réseau, et une vérification annuelle des contrôles de segmentation.
@@ -198,7 +198,7 @@ export default function AuditPciDssPage() {
               {/* SPONDEI FORM PLACEHOLDER */}
               {/* <div id="spondei-form" data-form-id="REPLACE_ID">Chargement...</div> */}
               {/* <script src="https://app.spondei.com/embed.js" async></script> */}
-              <p className="text-gray-500 text-sm text-center">Formulaire de contact — disponible prochainement</p>
+              <p className="text-gray-500 text-sm text-center">Formulaire de contact : disponible prochainement</p>
             </div>
           </section>
 
@@ -227,9 +227,9 @@ export default function AuditPciDssPage() {
           <section className="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800">
             <h3 className="text-lg font-semibold text-white mb-4">Services et ressources associés</h3>
             <ul className="space-y-2">
-              <li><Link href="/pentest-ecommerce" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest E-commerce — Tests d'intrusion boutiques en ligne</Link></li>
-              <li><Link href="/blog/pci-dss-v4-ecommerce" className="text-red-600 hover:text-red-400 transition-colors">→ Blog : PCI-DSS v4.0 — ce qui change pour l'e-commerce</Link></li>
-              <li><Link href="/pentest-fintech" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Fintech — Tests pour startups financières</Link></li>
+              <li><Link href="/pentest-ecommerce" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest E-commerce : Tests d'intrusion boutiques en ligne</Link></li>
+              <li><Link href="/blog/pci-dss-v4-ecommerce" className="text-red-600 hover:text-red-400 transition-colors">→ Blog : PCI-DSS v4.0 : ce qui change pour l'e-commerce</Link></li>
+              <li><Link href="/pentest-fintech" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Fintech : Tests pour startups financières</Link></li>
             </ul>
           </section>
 

@@ -22,9 +22,9 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: 'Atlas RedConsult <onboarding@resend.dev>',
         to: CONTACT_EMAIL,
-        subject: `Nouvelle demande de devis — ${entreprise}`,
+        subject: `Nouvelle demande de devis : ${entreprise}`,
         html: `
-          <h2>Nouvelle demande de devis — Atlas RedConsult</h2>
+          <h2>Nouvelle demande de devis : Atlas RedConsult</h2>
           <p><strong>Nom :</strong> ${nom}</p>
           <p><strong>Entreprise :</strong> ${entreprise}</p>
           <p><strong>Email :</strong> ${email}</p>

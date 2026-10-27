@@ -10,13 +10,13 @@ const articles: Record<string, {
   content: string
 }> = {
   'vulnerabilite-idor-expliquee': {
-    title: 'Vulnérabilité IDOR — Insecure Direct Object Reference Expliquée',
+    title: 'Vulnérabilité IDOR | Insecure Direct Object Reference Expliquée',
     description: 'Comprendre la vulnérabilité IDOR : comment elle fonctionne, comment la détecter en pentest et comment s\'en protéger efficacement.',
     date: '2024-01-15',
     category: 'Sécurité Web',
     content: `
       <h2>Qu'est-ce qu'une vulnérabilité IDOR ?</h2>
-      <p>IDOR (Insecure Direct Object Reference) est une faille de contrôle d'accès classée dans l'OWASP Top 10 (A01:2021 — Broken Access Control). Elle survient lorsqu'une application utilise des identifiants contrôlables par l'utilisateur pour accéder à des objets internes sans vérifier les autorisations.</p>
+      <p>IDOR (Insecure Direct Object Reference) est une faille de contrôle d'accès classée dans l'OWASP Top 10 (A01:2021 : Broken Access Control). Elle survient lorsqu'une application utilise des identifiants contrôlables par l'utilisateur pour accéder à des objets internes sans vérifier les autorisations.</p>
       <p>Exemple : vous consultez votre facture via <code>/facture/1234</code>. Si l'application ne vérifie pas que la facture 1234 vous appartient, un attaquant peut accéder à toutes les factures en modifiant l'identifiant.</p>
       <h2>Types d'IDOR</h2>
       <p><strong>Escalade horizontale :</strong> accès aux ressources d'un autre utilisateur de même niveau. <strong>Escalade verticale :</strong> accès à des ressources d'un niveau de privilège supérieur (admin).</p>
@@ -29,18 +29,18 @@ const articles: Record<string, {
     `,
   },
   'pentest-blackbox-vs-greybox-vs-whitebox': {
-    title: 'Pentest Black Box vs Grey Box vs White Box — Guide Complet',
+    title: 'Pentest Black Box vs Grey Box vs White Box | Guide Complet',
     description: 'Comparaison des trois approches de test d\'intrusion : avantages, inconvénients et cas d\'usage pour chaque méthode.',
     date: '2024-01-22',
     category: 'Méthodologie',
     content: `
       <h2>Les trois approches de pentest</h2>
       <p>Le choix de la méthode de test d'intrusion dépend de vos objectifs, de votre budget et du niveau de réalisme souhaité.</p>
-      <h2>Black Box — Boîte Noire</h2>
+      <h2>Black Box : Boîte Noire</h2>
       <p>Le pentesteur n'a aucune information préalable sur la cible. Il simule un attaquant externe sans accès privilégié. <strong>Avantages :</strong> réalisme maximal, test de la surface d'attaque externe. <strong>Inconvénients :</strong> coûteux en temps, couverture limitée.</p>
-      <h2>Grey Box — Boîte Grise</h2>
+      <h2>Grey Box : Boîte Grise</h2>
       <p>Le pentesteur dispose d'informations partielles (architecture, comptes utilisateurs standards). <strong>Avantages :</strong> bon équilibre réalisme/couverture, simule un attaquant interne ou un utilisateur compromis. <strong>C'est l'approche la plus courante.</strong></p>
-      <h2>White Box — Boîte Blanche</h2>
+      <h2>White Box : Boîte Blanche</h2>
       <p>Accès complet : code source, documentation, architecture, credentials. <strong>Avantages :</strong> couverture maximale, identification de vulnérabilités logiques profondes. <strong>Inconvénients :</strong> moins réaliste, nécessite plus de temps d'analyse.</p>
       <h2>Quand choisir quoi ?</h2>
       <p>Black Box pour tester la défense périmétrique. Grey Box pour les tests récurrents et la conformité. White Box pour les audits de code source et les applications critiques.</p>
@@ -48,15 +48,15 @@ const articles: Record<string, {
     `,
   },
   'bola-bfla-securite-api': {
-    title: 'BOLA et BFLA — Vulnérabilités Critiques des APIs',
+    title: 'BOLA et BFLA | Vulnérabilités Critiques des APIs',
     description: 'Broken Object Level Authorization et Broken Function Level Authorization : les vulnérabilités les plus critiques des APIs modernes.',
     date: '2024-02-05',
     category: 'Sécurité API',
     content: `
-      <h2>BOLA — Broken Object Level Authorization</h2>
+      <h2>BOLA : Broken Object Level Authorization</h2>
       <p>BOLA (OWASP API Security #1) est l'équivalent de l'IDOR pour les APIs. Elle survient quand une API ne vérifie pas que l'utilisateur a le droit d'accéder à l'objet demandé via son identifiant.</p>
       <p>Exemple : <code>GET /api/orders/12345</code> renvoie la commande 12345 sans vérifier que l'utilisateur authentifié en est le propriétaire.</p>
-      <h2>BFLA — Broken Function Level Authorization</h2>
+      <h2>BFLA : Broken Function Level Authorization</h2>
       <p>BFLA (OWASP API Security #5) survient quand une API expose des fonctions administratives à des utilisateurs non autorisés. Un utilisateur standard peut accéder à des endpoints admin comme <code>DELETE /api/users/456</code> ou <code>GET /api/admin/reports</code>.</p>
       <h2>Différence BOLA vs BFLA</h2>
       <p>BOLA = accès à des <strong>données</strong> d'un autre utilisateur. BFLA = accès à des <strong>fonctions</strong> non autorisées (souvent admin).</p>
@@ -69,13 +69,13 @@ const articles: Record<string, {
     `,
   },
   'ssrf-server-side-request-forgery': {
-    title: 'SSRF — Server Side Request Forgery : Comprendre et Prévenir',
+    title: 'SSRF | Server Side Request Forgery : Comprendre et Prévenir',
     description: 'Comment les attaques SSRF permettent d\'accéder aux ressources internes d\'un serveur et comment s\'en protéger dans un environnement cloud.',
     date: '2024-02-19',
     category: 'Sécurité Web',
     content: `
       <h2>Qu'est-ce que le SSRF ?</h2>
-      <p>Server-Side Request Forgery (SSRF) — OWASP Top 10 A10:2021 — est une vulnérabilité qui permet à un attaquant de forcer le serveur à effectuer des requêtes HTTP vers des ressources internes ou externes, en abusant d'une fonctionnalité légitime (import d'URL, webhook, preview de lien).</p>
+      <p>Server-Side Request Forgery (SSRF), OWASP Top 10 A10:2021, est une vulnérabilité qui permet à un attaquant de forcer le serveur à effectuer des requêtes HTTP vers des ressources internes ou externes, en abusant d'une fonctionnalité légitime (import d'URL, webhook, preview de lien).</p>
       <h2>Exemple d'exploitation</h2>
       <p>Une application permet d'importer une image via URL. L'attaquant soumet <code>http://169.254.169.254/latest/meta-data/</code> (AWS metadata endpoint). Le serveur effectue la requête et retourne les clés IAM de l'instance EC2.</p>
       <h2>Impact en environnement cloud</h2>
@@ -89,12 +89,12 @@ const articles: Record<string, {
     `,
   },
   'oauth-vulnerabilites-pentest': {
-    title: 'Vulnérabilités OAuth 2.0 — Guide Pentest et Sécurisation',
-    description: 'Les failles OAuth 2.0 les plus courantes : open redirect, token leakage, absence de PKCE — comment les tester et les corriger.',
+    title: 'Vulnérabilités OAuth 2.0 | Guide Pentest et Sécurisation',
+    description: 'Les failles OAuth 2.0 les plus courantes : open redirect, token leakage, absence de PKCE, comment les tester et les corriger.',
     date: '2024-03-04',
     category: 'Authentification',
     content: `
-      <h2>OAuth 2.0 — Rappel des flux</h2>
+      <h2>OAuth 2.0 : Rappel des flux</h2>
       <p>OAuth 2.0 est le protocole d'autorisation standard pour les APIs. Les flux principaux : Authorization Code (applications web), Implicit (déprécié), Client Credentials (machine-to-machine), PKCE (applications mobiles/SPA).</p>
       <h2>Vulnérabilités les plus courantes</h2>
       <h3>Open Redirect sur redirect_uri</h3>
@@ -112,31 +112,31 @@ const articles: Record<string, {
     `,
   },
   'methodologie-pentest-owasp': {
-    title: 'Méthodologie Pentest OWASP — Guide Complet OWASP Top 10',
+    title: 'Méthodologie Pentest OWASP | Guide Complet OWASP Top 10',
     description: 'Comment les pentesteurs professionnels utilisent l\'OWASP Top 10 comme framework pour conduire des tests d\'intrusion rigoureux.',
     date: '2024-03-18',
     category: 'Méthodologie',
     content: `
       <h2>L'OWASP Top 10 2021</h2>
       <p>L'OWASP (Open Web Application Security Project) publie le Top 10 des vulnérabilités web les plus critiques. La version 2021 identifie :</p>
-      <p>A01 — Broken Access Control • A02 — Cryptographic Failures • A03 — Injection • A04 — Insecure Design • A05 — Security Misconfiguration • A06 — Vulnerable Components • A07 — Authentication Failures • A08 — Integrity Failures • A09 — Logging Failures • A10 — SSRF</p>
+      <p>A01 : Broken Access Control • A02 : Cryptographic Failures • A03 : Injection • A04 : Insecure Design • A05 : Security Misconfiguration • A06 : Vulnerable Components • A07 : Authentication Failures • A08 : Integrity Failures • A09 : Logging Failures • A10 : SSRF</p>
       <h2>Les 6 phases d'un pentest OWASP</h2>
-      <h3>Phase 1 — Reconnaissance</h3>
+      <h3>Phase 1 : Reconnaissance</h3>
       <p>Collecte d'informations passives (OSINT) et actives : cartographie des technologies, identification des endpoints, analyse des headers HTTP, découverte de sous-domaines.</p>
-      <h3>Phase 2 — Scan et énumération</h3>
+      <h3>Phase 2 : Scan et énumération</h3>
       <p>Scan des ports et services, fingerprinting des frameworks, découverte des API endpoints, analyse du JavaScript côté client.</p>
-      <h3>Phase 3 — Tests d'authentification (A07)</h3>
+      <h3>Phase 3 : Tests d'authentification (A07)</h3>
       <p>Brute force des comptes, test de la politique de mots de passe, test du flux OAuth/OIDC, session management (fixation, hijacking).</p>
-      <h3>Phase 4 — Tests d'autorisation (A01)</h3>
+      <h3>Phase 4 : Tests d'autorisation (A01)</h3>
       <p>Tests IDOR, privilege escalation, test des contrôles d'accès par rôle (RBAC), manipulation des tokens JWT.</p>
-      <h3>Phase 5 — Tests d'injection (A03)</h3>
+      <h3>Phase 5 : Tests d'injection (A03)</h3>
       <p>SQL injection (manuel + sqlmap), XSS réfléchi/stocké/DOM, XXE, SSTI, command injection, LDAP injection.</p>
-      <h3>Phase 6 — Reporting</h3>
+      <h3>Phase 6 : Reporting</h3>
       <p>Rapport avec score CVSS v3.1, preuve de concept reproductible, impact business, recommandations priorisées.</p>
     `,
   },
   'dora-tests-tlpt-fintechs': {
-    title: 'DORA et Tests TLPT — Guide pour les Fintechs en 2024',
+    title: 'DORA et Tests TLPT | Guide pour les Fintechs en 2024',
     description: 'Le règlement DORA impose des tests TLPT aux entités financières. Guide complet sur les obligations et comment s\'y préparer.',
     date: '2024-04-01',
     category: 'Conformité',
@@ -145,7 +145,7 @@ const articles: Record<string, {
       <p>DORA (Digital Operational Resilience Act) est un règlement européen (UE 2022/2554) entré en application le 17 janvier 2025. Il impose des exigences de résilience opérationnelle numérique aux entités financières de l'UE.</p>
       <h2>Entités concernées</h2>
       <p>Banques, assurances, gestionnaires d'actifs, plateformes de trading, prestataires de services de paiement (PSP), sociétés de crypto-actifs (MiCA), et leurs fournisseurs ICT critiques.</p>
-      <h2>Les TLPT — Threat-Led Penetration Testing</h2>
+      <h2>Les TLPT : Threat-Led Penetration Testing</h2>
       <p>DORA impose des tests TLPT aux "entités financières significatives" tous les 3 ans. Les TLPT sont des exercices de Red Team avancés basés sur le renseignement de menaces réelles (threat intelligence) ciblant spécifiquement votre secteur.</p>
       <h2>Cadre TIBER-EU</h2>
       <p>Le TIBER-EU (Threat Intelligence-Based Ethical Red Teaming) est le cadre européen pour les TLPT. Il comprend 3 phases : Threat Intelligence (renseignement sur les menaces réelles), Red Team Testing (simulation d'attaque APT), Closure & Remediation (remédiation et rapport).</p>
@@ -156,7 +156,7 @@ const articles: Record<string, {
     `,
   },
   'nis2-obligations-entreprises': {
-    title: 'NIS2 — Obligations Cybersécurité pour les Entreprises',
+    title: 'NIS2 | Obligations Cybersécurité pour les Entreprises',
     description: 'La directive NIS2 étend les obligations de cybersécurité à des milliers d\'entreprises européennes. Périmètre, obligations, sanctions.',
     date: '2024-04-15',
     category: 'Conformité',
@@ -176,18 +176,18 @@ const articles: Record<string, {
     `,
   },
   'pci-dss-v4-ecommerce': {
-    title: 'PCI-DSS v4.0 — Ce qui Change pour l\'E-commerce',
+    title: 'PCI-DSS v4.0 | Ce qui Change pour l\'E-commerce',
     description: 'PCI-DSS v4.0 introduit des changements majeurs pour les e-commerçants. Nouvelles exigences, obligation de pentest (req 11.4), délais.',
     date: '2024-05-06',
     category: 'Conformité',
     content: `
-      <h2>PCI-DSS v4.0 — Les changements clés</h2>
+      <h2>PCI-DSS v4.0 : Les changements clés</h2>
       <p>La version 4.0 de PCI-DSS (Payment Card Industry Data Security Standard), publiée en mars 2022 et obligatoire depuis le 31 mars 2024, introduit des changements significatifs pour les e-commerçants.</p>
-      <h2>Exigence 11.4 — Tests d'intrusion</h2>
+      <h2>Exigence 11.4 : Tests d'intrusion</h2>
       <p>Pentest annuel obligatoire sur les périmètres externes et internes en scope PCI. Le pentesteur doit être qualifié et indépendant. Le rapport doit documenter la méthodologie, les résultats et les corrections. Atlas RedConsult fournit des rapports directement compatibles avec cette exigence.</p>
-      <h2>Exigence 6.4.3 — Scripts de paiement</h2>
+      <h2>Exigence 6.4.3 : Scripts de paiement</h2>
       <p>Nouveau dans v4.0 : inventaire et justification de tous les scripts JavaScript sur les pages de paiement, vérification d'intégrité (SRI), autorisation explicite de chaque script. Protection contre les attaques Magecart/e-skimming.</p>
-      <h2>Exigence 6.4.3 — Content Security Policy</h2>
+      <h2>Exigence 6.4.3 : Content Security Policy</h2>
       <p>Mise en place d'une CSP (Content Security Policy) stricte sur les pages de checkout pour bloquer les scripts non autorisés.</p>
       <h2>Nouveautés v4.0 vs v3.2.1</h2>
       <p>Approche "customized implementation" (flexibilité dans la méthode), MFA obligatoire pour tous les accès au CDE (Cardholder Data Environment), exigences renforcées sur l'authentification, nouvelles exigences sur le phishing.</p>
@@ -196,7 +196,7 @@ const articles: Record<string, {
     `,
   },
   'rapport-pentest-comment-lire': {
-    title: 'Comment Lire un Rapport de Pentest — Guide Pratique',
+    title: 'Comment Lire un Rapport de Pentest | Guide Pratique',
     description: 'Guide pour comprendre un rapport de pentest : scores CVSS, niveaux de risque, recommandations et priorisation des remédiations.',
     date: '2024-05-20',
     category: 'Guide',
@@ -217,12 +217,12 @@ const articles: Record<string, {
     `,
   },
   'hall-of-fame-google-microsoft-meta': {
-    title: 'Hall of Fame Google, Microsoft, Meta — Notre Parcours Bug Bounty',
+    title: 'Hall of Fame Google, Microsoft, Meta | Notre Parcours Bug Bounty',
     description: 'Atlas RedConsult reconnu dans les programmes de bug bounty de Google, Microsoft, Meta et le DoD américain. Notre parcours en responsible disclosure.',
     date: '2024-06-03',
     category: 'À Propos',
     content: `
-      <h2>Responsible Disclosure — Notre engagement</h2>
+      <h2>Responsible Disclosure : Notre engagement</h2>
       <p>Les experts d'Atlas RedConsult participent activement aux programmes de bug bounty des grandes organisations technologiques. Cette pratique de responsible disclosure est au cœur de notre éthique professionnelle et garantit que nos compétences offensives sont utilisées pour renforcer la sécurité globale.</p>
       <h2>Google Vulnerability Reward Program (VRP)</h2>
       <p>Le Google VRP récompense la découverte de vulnérabilités dans les produits Google (Chrome, Android, GCP, Gmail, Google Search). Nos experts ont identifié et signalé des vulnérabilités reconnues par le programme, avec inscription au Hall of Fame Google Security.</p>
@@ -230,25 +230,25 @@ const articles: Record<string, {
       <p>Le MSRC gère les signalements de vulnérabilités dans les produits Microsoft (Windows, Azure, M365, Teams). La reconnaissance au MSRC Hall of Fame atteste d'une expertise approfondie sur les écosystèmes Microsoft, particulièrement pertinente pour nos clients utilisant Azure AD et M365.</p>
       <h2>Meta Bug Bounty Program</h2>
       <p>Le programme Meta couvre Facebook, Instagram, WhatsApp et les APIs associées. Nos contributions au programme Meta témoignent d'une expertise en sécurité des applications sociales et des APIs OAuth à grande échelle.</p>
-      <h2>US Department of Defense — Vulnerability Disclosure Program</h2>
+      <h2>US Department of Defense : Vulnerability Disclosure Program</h2>
       <p>Le VDP du DoD américain (géré via HackerOne) est l'un des programmes de disclosure les plus exigeants. La reconnaissance dans ce programme atteste d'une expertise en sécurité des infrastructures critiques.</p>
       <h2>Pourquoi c'est important pour vous</h2>
-      <p>Ces reconnaissances garantissent que nos pentesteurs ont une expérience réelle de la découverte de vulnérabilités complexes dans des environnements de production à grande échelle — pas seulement en laboratoire. Quand nous testons vos applications, vous bénéficiez de cette expertise validée.</p>
+      <p>Ces reconnaissances garantissent que nos pentesteurs ont une expérience réelle de la découverte de vulnérabilités complexes dans des environnements de production à grande échelle, pas seulement en laboratoire. Quand nous testons vos applications, vous bénéficiez de cette expertise validée.</p>
     `,
   },
   'remediation-apres-pentest': {
-    title: 'Remédiation Après Pentest — Guide Complet de Correction',
+    title: 'Remédiation Après Pentest | Guide Complet de Correction',
     description: 'Comment corriger efficacement les vulnérabilités identifiées lors d\'un pentest : priorisation, vérification des correctifs, contre-audit.',
     date: '2024-06-17',
     category: 'Guide',
     content: `
-      <h2>Phase 1 — Triage et priorisation (J0-J3)</h2>
+      <h2>Phase 1 : Triage et priorisation (J0-J3)</h2>
       <p>À réception du rapport de pentest, constituez une cellule de remédiation incluant le RSSI, les développeurs et les ops. Triez les vulnérabilités par criticité CVSS et par facilité de correction. Identifiez les "quick wins" : vulnérabilités Critiques/Élevées faciles à corriger rapidement.</p>
-      <h2>Phase 2 — Corrections urgentes (J0-J7)</h2>
+      <h2>Phase 2 : Corrections urgentes (J0-J7)</h2>
       <p>Corrigez immédiatement les vulnérabilités Critiques exploitables depuis Internet. Pour les vulnérabilités sans patch disponible, appliquez des mesures compensatoires (WAF, restriction d'accès, monitoring renforcé). Documentez chaque correction avec le commit Git correspondant.</p>
-      <h2>Phase 3 — Corrections planifiées (J7-J45)</h2>
-      <p>Intégrez les corrections Élevées et Moyennes dans vos cycles de développement normaux. Évitez les corrections à la va-vite qui introduisent des régressions. Pour chaque vulnérabilité, révisez le code environnant — une faille révèle souvent des problèmes similaires à proximité.</p>
-      <h2>Phase 4 — Retest et validation (J45-J60)</h2>
+      <h2>Phase 3 : Corrections planifiées (J7-J45)</h2>
+      <p>Intégrez les corrections Élevées et Moyennes dans vos cycles de développement normaux. Évitez les corrections à la va-vite qui introduisent des régressions. Pour chaque vulnérabilité, révisez le code environnant, une faille révèle souvent des problèmes similaires à proximité.</p>
+      <h2>Phase 4 : Retest et validation (J45-J60)</h2>
       <p>Faites valider vos corrections par le pentesteur initial. Le retest vérifie : (1) que la vulnérabilité est effectivement corrigée, (2) que la correction n'introduit pas de régression, (3) que des variantes de la vulnérabilité ne subsistent pas.</p>
       <h2>Remédiation systémique</h2>
       <p>Au-delà des corrections individuelles, adressez les causes racines : formation des développeurs aux vulnérabilités identifiées, ajout de tests de sécurité automatisés (SAST/DAST) dans la CI/CD, revue du processus de développement sécurisé (SDLC).</p>
@@ -313,8 +313,8 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
               <time className="text-sm text-gray-500">{formatDate(article.date)}</time>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              {article.title.split('—').map((part, i) => i === 0
-                ? <span key={i}>{part}— </span>
+              {article.title.split(', ').map((part, i) => i === 0
+                ? <span key={i}>{part}, </span>
                 : <span key={i} className="text-red-600">{part}</span>
               )}
             </h1>
@@ -331,7 +331,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
             <div className="flex flex-wrap gap-3">
               {Object.entries(articles).filter(([s]) => s !== params.slug).slice(0, 4).map(([s, a]) => (
                 <Link key={s} href={`/blog/${s}`} className="text-sm text-red-500 hover:text-red-400 transition-colors">
-                  → {a.title.split('—')[0].trim()}
+                  → {a.title.split(', ')[0].trim()}
                 </Link>
               ))}
             </div>

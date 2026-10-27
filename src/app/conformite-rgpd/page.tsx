@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Conformité RGPD — Pentest Protection Données Personnelles | Atlas RedConsult',
+  title: 'Conformité RGPD | Pentest Protection Données Personnelles | Atlas RedConsult',
   description:
     'Conformité RGPD : tests d\'intrusion pour sécuriser vos données personnelles. Art. 32 RGPD. Cabinet Paris. Devis pentest RGPD gratuit 48h.',
   alternates: {
@@ -18,7 +18,7 @@ const jsonLd = {
     {
       '@type': 'Service',
       '@id': 'https://atlasredconsult.com/conformite-rgpd#service',
-      name: 'Conformité RGPD — Pentest Protection des Données Personnelles',
+      name: 'Conformité RGPD | Pentest Protection des Données Personnelles',
       description:
         'Tests d\'intrusion pour la conformité RGPD (Article 32) : identification des vulnérabilités exposant les données personnelles, rapport documenté pour votre DPO et la CNIL.',
       provider: {
@@ -91,10 +91,10 @@ export default function ConformiteRgpdPage() {
             <span className="text-gray-300">Conformité RGPD</span>
           </nav>
           <p className="text-red-600 font-semibold text-sm uppercase tracking-widest mb-4">
-            RGPD Article 32 — Sécurité des Données Personnelles
+            RGPD Article 32 : Sécurité des Données Personnelles
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-            Conformité RGPD — Tests de Sécurité pour la Protection des Données Personnelles
+            Conformité RGPD : Tests de Sécurité pour la Protection des Données Personnelles
           </h1>
           <p className="text-xl text-gray-300 mb-8 max-w-3xl">
             Une violation de données personnelles peut coûter à votre organisation jusqu'à 4 % de son chiffre d'affaires mondial. L'article 32 du RGPD impose des mesures de sécurité techniques appropriées et leur évaluation régulière. Avez-vous réellement vérifié que vos systèmes protègent les données de vos clients, employés et partenaires ?
@@ -122,7 +122,7 @@ export default function ConformiteRgpdPage() {
                 L'article 32 du Règlement Général sur la Protection des Données (RGPD) constitue la pierre angulaire des obligations de sécurité imposées aux responsables de traitement et aux sous-traitants. Cet article est souvent sous-estimé dans sa dimension technique : il ne se contente pas de demander des mesures de sécurité, il exige qu'elles soient proportionnées aux risques, mises en œuvre, et régulièrement évaluées.
               </p>
               <p>
-                Le texte de l'article 32 est explicite sur les mesures à considérer : la pseudonymisation et le chiffrement des données à caractère personnel, des moyens permettant de garantir la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes et des services de traitement, des moyens permettant de rétablir la disponibilité des données en cas d'incident physique ou technique, et — c'est la disposition la plus directement liée aux tests d'intrusion — une procédure visant à tester, analyser et évaluer régulièrement l'efficacité des mesures techniques et organisationnelles pour assurer la sécurité du traitement.
+                Le texte de l'article 32 est explicite sur les mesures à considérer : la pseudonymisation et le chiffrement des données à caractère personnel, des moyens permettant de garantir la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes et des services de traitement, des moyens permettant de rétablir la disponibilité des données en cas d'incident physique ou technique, et, c'est la disposition la plus directement liée aux tests d'intrusion : une procédure visant à tester, analyser et évaluer régulièrement l'efficacité des mesures techniques et organisationnelles pour assurer la sécurité du traitement.
               </p>
               <p>
                 Cette dernière obligation est fondamentale : le RGPD ne demande pas uniquement de mettre des mesures en place, mais de vérifier régulièrement qu'elles fonctionnent. C'est précisément le rôle des tests d'intrusion. Un audit de sécurité ou un test de pénétration réalisé par un prestataire externe constitue la réponse technique la plus directe et la plus documentable à cette exigence d'évaluation régulière.
@@ -167,7 +167,7 @@ export default function ConformiteRgpdPage() {
                 Les injections SQL restent en tête des vecteurs d'exfiltration de bases de données personnelles. Une seule vulnérabilité d'injection dans une application web peut suffire à exposer l'intégralité d'une base de données clients. Ces vulnérabilités sont souvent présentes dans des applications anciennes ou développées sans processus de sécurité du code.
               </p>
               <p>
-                Les problèmes de contrôle d'accès — notamment l'Insecure Direct Object Reference (IDOR) — permettent à un utilisateur connecté d'accéder aux données d'autres utilisateurs en manipulant simplement des identifiants dans les URLs ou les paramètres API. Ce type de vulnérabilité est particulièrement préoccupant du point de vue RGPD car elle peut permettre des violations massives sans traces évidentes dans les logs.
+                Les problèmes de contrôle d'accès : notamment l'Insecure Direct Object Reference (IDOR) : permettent à un utilisateur connecté d'accéder aux données d'autres utilisateurs en manipulant simplement des identifiants dans les URLs ou les paramètres API. Ce type de vulnérabilité est particulièrement préoccupant du point de vue RGPD car elle peut permettre des violations massives sans traces évidentes dans les logs.
               </p>
               <p>
                 Les interfaces d'administration et les API non protégées constituent une autre source majeure d'incidents. Des back-offices accessibles sans authentification suffisante, des exports CSV de données clients accessibles à des URLs devinables, des APIs de recherche retournant trop de données sans filtrage adéquat : ces configurations exposent des volumes importants de données personnelles.
@@ -185,7 +185,7 @@ export default function ConformiteRgpdPage() {
             </h2>
             <div className="text-gray-300 space-y-4 leading-relaxed">
               <p>
-                Notre méthodologie pentest RGPD intègre les meilleures pratiques techniques (OWASP Top 10, PTES) avec une lecture RGPD systématique de chaque vulnérabilité identifiée. Cette double lecture — technique et réglementaire — est ce qui différencie un pentest RGPD d'un test de sécurité standard.
+                Notre méthodologie pentest RGPD intègre les meilleures pratiques techniques (OWASP Top 10, PTES) avec une lecture RGPD systématique de chaque vulnérabilité identifiée. Cette double lecture, technique et réglementaire, est ce qui différencie un pentest RGPD d'un test de sécurité standard.
               </p>
               <p>
                 La phase de cadrage inclut une revue de votre registre des traitements et de vos analyses d'impact (AIPD) pour aligner le périmètre de test sur vos traitements à risque élevé. Nous échangeons avec votre DPO pour comprendre les enjeux spécifiques à votre contexte : secteur d'activité, catégories de données sensibles (santé, données financières, données de mineurs), volume de personnes concernées.
@@ -201,7 +201,7 @@ export default function ConformiteRgpdPage() {
               {/* SPONDEI FORM PLACEHOLDER */}
               {/* <div id="spondei-form" data-form-id="REPLACE_ID">Chargement...</div> */}
               {/* <script src="https://app.spondei.com/embed.js" async></script> */}
-              <p className="text-gray-500 text-sm text-center">Formulaire de contact — disponible prochainement</p>
+              <p className="text-gray-500 text-sm text-center">Formulaire de contact : disponible prochainement</p>
             </div>
           </section>
 
@@ -221,7 +221,7 @@ export default function ConformiteRgpdPage() {
                 La synthèse RGPD présente : la liste des traitements de données personnelles testés et le résultat global pour chacun, un tableau de synthèse des vulnérabilités avec leur impact sur la confidentialité, l'intégrité et la disponibilité des données personnelles, une évaluation du niveau de risque résiduel pour les personnes concernées, et des recommandations de mesures organisationnelles complémentaires (politique de gestion des accès, procédure de notification des violations, etc.).
               </p>
               <p>
-                Pour les organisations soumises à notification CNIL en cas de violation, nous fournissons également une évaluation de la probabilité que les vulnérabilités identifiées aient déjà été exploitées. Cette évaluation — basée sur la présence ou l'absence de traces dans les logs et sur l'exposition historique des systèmes — est un élément clé pour la prise de décision concernant une éventuelle notification préventive.
+                Pour les organisations soumises à notification CNIL en cas de violation, nous fournissons également une évaluation de la probabilité que les vulnérabilités identifiées aient déjà été exploitées. Cette évaluation, basée sur la présence ou l'absence de traces dans les logs et sur l'exposition historique des systèmes : est un élément clé pour la prise de décision concernant une éventuelle notification préventive.
               </p>
             </div>
           </section>
@@ -230,9 +230,9 @@ export default function ConformiteRgpdPage() {
           <section className="bg-[#1A1A1A] p-6 rounded-lg border border-gray-800">
             <h3 className="text-lg font-semibold text-white mb-4">Services et ressources associés</h3>
             <ul className="space-y-2">
-              <li><Link href="/pentest-web" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Web — Tests d'intrusion applications web</Link></li>
-              <li><Link href="/pentest-api" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest API — Sécurité des interfaces REST et GraphQL</Link></li>
-              <li><Link href="/audit-securite-informatique" className="text-red-600 hover:text-red-400 transition-colors">→ Audit Sécurité Informatique — Évaluation complète du SI</Link></li>
+              <li><Link href="/pentest-web" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest Web : Tests d'intrusion applications web</Link></li>
+              <li><Link href="/pentest-api" className="text-red-600 hover:text-red-400 transition-colors">→ Pentest API : Sécurité des interfaces REST et GraphQL</Link></li>
+              <li><Link href="/audit-securite-informatique" className="text-red-600 hover:text-red-400 transition-colors">→ Audit Sécurité Informatique : Évaluation complète du SI</Link></li>
             </ul>
           </section>
 
